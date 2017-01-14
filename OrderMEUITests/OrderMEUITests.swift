@@ -8,7 +8,7 @@
 
 import XCTest
 
-class OrderMEUITests: XCTestCase {
+class Acceptance: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -19,6 +19,12 @@ class OrderMEUITests: XCTestCase {
     
     override func tearDown() {
         super.tearDown()
+    }
+    
+    func waitForElementToAppear(format: String, element: AnyObject, time: Double){
+        let exists = NSPredicate(format: format)
+        expectation(for: exists, evaluatedWith:element, handler: nil)
+        waitForExpectations(timeout: time, handler: nil)
     }
     
     func testCallWaiterForMenu() {
@@ -38,7 +44,9 @@ class OrderMEUITests: XCTestCase {
         app.alerts["The waiter is on his way"].buttons["Bring a menu"].tap()
         
         let gotItAlert = app.alerts["Got it!"]
-        sleep(2) // add after first run
+        
+        waitForElementToAppear(format: "exists == true ", element: gotItAlert, time: 3.0)
+        
         XCTAssert(gotItAlert.staticTexts["The waiter is on his way"].exists)
         
     }
