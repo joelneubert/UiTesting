@@ -8,23 +8,14 @@
 
 import XCTest
 
-class Acceptance: XCTestCase {
+class OrderMEUITests: BaseTest {
         
     override func setUp() {
         super.setUp()
-        
-        continueAfterFailure = false
-        XCUIApplication().launch()
     }
     
     override func tearDown() {
         super.tearDown()
-    }
-    
-    func waitForElementToAppear(format: String, element: AnyObject, time: Double){
-        let exists = NSPredicate(format: format)
-        expectation(for: exists, evaluatedWith:element, handler: nil)
-        waitForExpectations(timeout: time, handler: nil)
     }
     
     func testCallWaiterForMenu() {
@@ -36,9 +27,11 @@ class Acceptance: XCTestCase {
         tablesQuery.staticTexts["Hookah Place"].tap()
         tablesQuery.staticTexts["Detect table"].tap()
         
-        let textField = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("3")
+        
+        let selectTableField = app.textFields["@table_number_textfield"]
+        
+        selectTableField.tap()
+        selectTableField.typeText("3")
         app.buttons["Select table"].tap()
         tablesQuery.staticTexts["Call a waiter"].tap()
         app.alerts["The waiter is on his way"].buttons["Bring a menu"].tap()
