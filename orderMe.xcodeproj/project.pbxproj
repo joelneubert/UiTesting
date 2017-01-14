@@ -48,8 +48,6 @@
 /* Begin PBXFileReference section */
 		1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1C0503B5E49B7148C83F5D /* Pods-orderMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-orderMe/Pods-orderMe.release.xcconfig"; sourceTree = "<group>"; };
-		2B09DF791E2A1A2E00EF2BEF /* OrderMETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMETests.swift; sourceTree = "<group>"; };
-		2B09DF7B1E2A1A2E00EF2BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B13B0271E064472004A09D2 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		2B2EA7691CBB0377001507DD /* OrderME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2EA7781CBB0377001507DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,8 +78,6 @@
 		2B4A4CD81E25987A00E86208 /* OrderME.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrderME.entitlements; sourceTree = "<group>"; };
 		2B4A4D021E27626900E86208 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2B665C421E2301DB005C4651 /* PlaceTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTransform.swift; sourceTree = "<group>"; };
-		2B665C4C1E233E1F005C4651 /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
-		2B665C4E1E233E1F005C4651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B982BA11D02335400151D88 /* MyOrdersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrdersController.swift; sourceTree = "<group>"; };
 		2B982BA31D0240AB00151D88 /* myOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myOrderCell.swift; sourceTree = "<group>"; };
 		2BD9637D1CEDDE2B007913B0 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -114,21 +110,10 @@
 			name = Singletons;
 			sourceTree = "<group>";
 		};
-		2B09DF781E2A1A2E00EF2BEF /* OrderMETests */ = {
-			isa = PBXGroup;
-			children = (
-				2B09DF791E2A1A2E00EF2BEF /* OrderMETests.swift */,
-				2B09DF7B1E2A1A2E00EF2BEF /* Info.plist */,
-			);
-			path = OrderMETests;
-			sourceTree = "<group>";
-		};
 		2B2EA7601CBB0377001507DD = {
 			isa = PBXGroup;
 			children = (
 				2B2EA76B1CBB0377001507DD /* orderMe */,
-				2B665C4B1E233E1F005C4651 /* OrderMEUITests */,
-				2B09DF781E2A1A2E00EF2BEF /* OrderMETests */,
 				2B2EA76A1CBB0377001507DD /* Products */,
 				C9DF39D983637B40F1924EE8 /* Pods */,
 				ED4E7941F9C50F3BEA03680F /* Frameworks */,
@@ -240,15 +225,6 @@
 				2B665C421E2301DB005C4651 /* PlaceTransform.swift */,
 			);
 			name = JsonTransforms;
-			sourceTree = "<group>";
-		};
-		2B665C4B1E233E1F005C4651 /* OrderMEUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2B665C4C1E233E1F005C4651 /* OrderMEUITests.swift */,
-				2B665C4E1E233E1F005C4651 /* Info.plist */,
-			);
-			path = OrderMEUITests;
 			sourceTree = "<group>";
 		};
 		C9DF39D983637B40F1924EE8 /* Pods */ = {
