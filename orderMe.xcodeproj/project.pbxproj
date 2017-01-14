@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B09DF7A1E2A1A2E00EF2BEF /* OrderMETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09DF791E2A1A2E00EF2BEF /* OrderMETests.swift */; };
 		2B13B0281E064472004A09D2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B13B0271E064472004A09D2 /* Menu.swift */; };
 		2B2EA7911CBB03D6001507DD /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA7821CBB03D6001507DD /* CategoryCell.swift */; };
 		2B2EA7921CBB03D6001507DD /* PlaceMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA7831CBB03D6001507DD /* PlaceMainMenu.swift */; };
@@ -35,7 +34,6 @@
 		2B46285F1E170FC400B5F011 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B46285E1E170FC400B5F011 /* LoginViewController.swift */; };
 		2B4A4D031E27626900E86208 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A4D021E27626900E86208 /* User.swift */; };
 		2B665C431E2301DB005C4651 /* PlaceTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B665C421E2301DB005C4651 /* PlaceTransform.swift */; };
-		2B665C4D1E233E1F005C4651 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B665C4C1E233E1F005C4651 /* OrderMEUITests.swift */; };
 		2B982BA21D02335400151D88 /* MyOrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B982BA11D02335400151D88 /* MyOrdersController.swift */; };
 		2B982BA41D0240AB00151D88 /* myOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B982BA31D0240AB00151D88 /* myOrderCell.swift */; };
 		2BD9637E1CEDDE2B007913B0 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9637D1CEDDE2B007913B0 /* Order.swift */; };
@@ -47,27 +45,9 @@
 		E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2B09DF7C1E2A1A2E00EF2BEF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2B2EA7611CBB0377001507DD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2B2EA7681CBB0377001507DD;
-			remoteInfo = orderMe;
-		};
-		2B665C4F1E233E1F005C4651 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2B2EA7611CBB0377001507DD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2B2EA7681CBB0377001507DD;
-			remoteInfo = orderMe;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1C0503B5E49B7148C83F5D /* Pods-orderMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-orderMe/Pods-orderMe.release.xcconfig"; sourceTree = "<group>"; };
-		2B09DF771E2A1A2D00EF2BEF /* OrderMETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B09DF791E2A1A2E00EF2BEF /* OrderMETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMETests.swift; sourceTree = "<group>"; };
 		2B09DF7B1E2A1A2E00EF2BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B13B0271E064472004A09D2 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -100,7 +80,6 @@
 		2B4A4CD81E25987A00E86208 /* OrderME.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrderME.entitlements; sourceTree = "<group>"; };
 		2B4A4D021E27626900E86208 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2B665C421E2301DB005C4651 /* PlaceTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTransform.swift; sourceTree = "<group>"; };
-		2B665C4A1E233E1E005C4651 /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B665C4C1E233E1F005C4651 /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
 		2B665C4E1E233E1F005C4651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B982BA11D02335400151D88 /* MyOrdersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrdersController.swift; sourceTree = "<group>"; };
@@ -115,25 +94,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2B09DF741E2A1A2D00EF2BEF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2B2EA7661CBB0377001507DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2B665C471E233E1E005C4651 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,8 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				2B2EA7691CBB0377001507DD /* OrderME.app */,
-				2B665C4A1E233E1E005C4651 /* OrderMEUITests.xctest */,
-				2B09DF771E2A1A2D00EF2BEF /* OrderMETests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,24 +271,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B09DF761E2A1A2D00EF2BEF /* OrderMETests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2B09DF801E2A1A2E00EF2BEF /* Build configuration list for PBXNativeTarget "OrderMETests" */;
-			buildPhases = (
-				2B09DF731E2A1A2D00EF2BEF /* Sources */,
-				2B09DF741E2A1A2D00EF2BEF /* Frameworks */,
-				2B09DF751E2A1A2D00EF2BEF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2B09DF7D1E2A1A2E00EF2BEF /* PBXTargetDependency */,
-			);
-			name = OrderMETests;
-			productName = OrderMETests;
-			productReference = 2B09DF771E2A1A2D00EF2BEF /* OrderMETests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		2B2EA7681CBB0377001507DD /* orderMe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B2EA77B1CBB0377001507DD /* Build configuration list for PBXNativeTarget "orderMe" */;
@@ -346,24 +291,6 @@
 			productReference = 2B2EA7691CBB0377001507DD /* OrderME.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2B665C491E233E1E005C4651 /* OrderMEUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2B665C511E233E1F005C4651 /* Build configuration list for PBXNativeTarget "OrderMEUITests" */;
-			buildPhases = (
-				2B665C461E233E1E005C4651 /* Sources */,
-				2B665C471E233E1E005C4651 /* Frameworks */,
-				2B665C481E233E1E005C4651 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2B665C501E233E1F005C4651 /* PBXTargetDependency */,
-			);
-			name = OrderMEUITests;
-			productName = OrderMEUITests;
-			productReference = 2B665C4A1E233E1E005C4651 /* OrderMEUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -374,12 +301,6 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Boris Gurtovoy";
 				TargetAttributes = {
-					2B09DF761E2A1A2D00EF2BEF = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = C9Y48E93GG;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 2B2EA7681CBB0377001507DD;
-					};
 					2B2EA7681CBB0377001507DD = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = WN6V8DZ29J;
@@ -389,12 +310,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					2B665C491E233E1E005C4651 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = C9Y48E93GG;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 2B2EA7681CBB0377001507DD;
 					};
 				};
 			};
@@ -412,33 +327,17 @@
 			projectRoot = "";
 			targets = (
 				2B2EA7681CBB0377001507DD /* orderMe */,
-				2B665C491E233E1E005C4651 /* OrderMEUITests */,
-				2B09DF761E2A1A2D00EF2BEF /* OrderMETests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2B09DF751E2A1A2D00EF2BEF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2B2EA7671CBB0377001507DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2B2EA7A21CBB03F7001507DD /* Main.storyboard in Resources */,
 				2B2EA7B51CBB0542001507DD /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2B665C481E233E1E005C4651 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,14 +392,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2B09DF731E2A1A2D00EF2BEF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B09DF7A1E2A1A2E00EF2BEF /* OrderMETests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2B2EA7651CBB0377001507DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -541,65 +432,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B665C461E233E1E005C4651 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B665C4D1E233E1F005C4651 /* OrderMEUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		2B09DF7D1E2A1A2E00EF2BEF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2B2EA7681CBB0377001507DD /* orderMe */;
-			targetProxy = 2B09DF7C1E2A1A2E00EF2BEF /* PBXContainerItemProxy */;
-		};
-		2B665C501E233E1F005C4651 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2B2EA7681CBB0377001507DD /* orderMe */;
-			targetProxy = 2B665C4F1E233E1F005C4651 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		2B09DF7E1E2A1A2E00EF2BEF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = C9Y48E93GG;
-				INFOPLIST_FILE = OrderMETests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GurtCorporation.OrderMETests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderME.app/OrderME";
-			};
-			name = Debug;
-		};
-		2B09DF7F1E2A1A2E00EF2BEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = C9Y48E93GG;
-				INFOPLIST_FILE = OrderMETests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GurtCorporation.OrderMETests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderME.app/OrderME";
-			};
-			name = Release;
-		};
 		2B2EA7791CBB0377001507DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -731,50 +566,9 @@
 			};
 			name = Release;
 		};
-		2B665C521E233E1F005C4651 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = C9Y48E93GG;
-				INFOPLIST_FILE = OrderMEUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GurtCorporation.OrderMEUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = orderMe;
-			};
-			name = Debug;
-		};
-		2B665C531E233E1F005C4651 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEVELOPMENT_TEAM = C9Y48E93GG;
-				INFOPLIST_FILE = OrderMEUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GurtCorporation.OrderMEUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = orderMe;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B09DF801E2A1A2E00EF2BEF /* Build configuration list for PBXNativeTarget "OrderMETests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2B09DF7E1E2A1A2E00EF2BEF /* Debug */,
-				2B09DF7F1E2A1A2E00EF2BEF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		2B2EA7641CBB0377001507DD /* Build configuration list for PBXProject "orderMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -789,15 +583,6 @@
 			buildConfigurations = (
 				2B2EA77C1CBB0377001507DD /* Debug */,
 				2B2EA77D1CBB0377001507DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2B665C511E233E1F005C4651 /* Build configuration list for PBXNativeTarget "OrderMEUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2B665C521E233E1F005C4651 /* Debug */,
-				2B665C531E233E1F005C4651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
