@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+
+class TabBarScreen : BaseScreen {
+    
+    private let restaurantCell = table.staticTexts["Hookah Place"]
+    
+    func tapOnRestaurantCell(){
+        tap(element: restaurantCell)
+    }
+    
+}

@@ -34,6 +34,10 @@
 		2B46285F1E170FC400B5F011 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B46285E1E170FC400B5F011 /* LoginViewController.swift */; };
 		2B4A4D031E27626900E86208 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A4D021E27626900E86208 /* User.swift */; };
 		2B5315B31E2AD3DC00985BA7 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5315B21E2AD3DC00985BA7 /* BaseTest.swift */; };
+		2B5315B61E2AEE7000985BA7 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5315B51E2AEE7000985BA7 /* BaseScreen.swift */; };
+		2B5315B81E2AEE7900985BA7 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5315B71E2AEE7900985BA7 /* LoginScreen.swift */; };
+		2B5315BA1E2AEE8400985BA7 /* TabBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5315B91E2AEE8400985BA7 /* TabBarScreen.swift */; };
+		2B5315BE1E2AEEBC00985BA7 /* RestaurantDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5315BD1E2AEEBC00985BA7 /* RestaurantDetailsScreen.swift */; };
 		2B665C431E2301DB005C4651 /* PlaceTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B665C421E2301DB005C4651 /* PlaceTransform.swift */; };
 		2B982BA21D02335400151D88 /* MyOrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B982BA11D02335400151D88 /* MyOrdersController.swift */; };
 		2B982BA41D0240AB00151D88 /* myOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B982BA31D0240AB00151D88 /* myOrderCell.swift */; };
@@ -90,6 +94,10 @@
 		2B4A4CD81E25987A00E86208 /* OrderME.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrderME.entitlements; sourceTree = "<group>"; };
 		2B4A4D021E27626900E86208 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2B5315B21E2AD3DC00985BA7 /* BaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		2B5315B51E2AEE7000985BA7 /* BaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
+		2B5315B71E2AEE7900985BA7 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		2B5315B91E2AEE8400985BA7 /* TabBarScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarScreen.swift; sourceTree = "<group>"; };
+		2B5315BD1E2AEEBC00985BA7 /* RestaurantDetailsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsScreen.swift; sourceTree = "<group>"; };
 		2B665C421E2301DB005C4651 /* PlaceTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTransform.swift; sourceTree = "<group>"; };
 		2B982BA11D02335400151D88 /* MyOrdersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrdersController.swift; sourceTree = "<group>"; };
 		2B982BA31D0240AB00151D88 /* myOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myOrderCell.swift; sourceTree = "<group>"; };
@@ -253,6 +261,17 @@
 			name = Tests;
 			sourceTree = "<group>";
 		};
+		2B5315B41E2AEE5F00985BA7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2B5315B51E2AEE7000985BA7 /* BaseScreen.swift */,
+				2B5315B71E2AEE7900985BA7 /* LoginScreen.swift */,
+				2B5315B91E2AEE8400985BA7 /* TabBarScreen.swift */,
+				2B5315BD1E2AEEBC00985BA7 /* RestaurantDetailsScreen.swift */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
 		2B665C411E2301BD005C4651 /* JsonTransforms */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +283,7 @@
 		2BB087221E2AC91E00B10765 /* OrderMEUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2B5315B41E2AEE5F00985BA7 /* Screens */,
 				2B5315B11E2AD3BF00985BA7 /* Tests */,
 				2BB087251E2AC91E00B10765 /* Info.plist */,
 			);
@@ -489,6 +509,10 @@
 			files = (
 				2B5315B31E2AD3DC00985BA7 /* BaseTest.swift in Sources */,
 				2BB087241E2AC91E00B10765 /* OrderMEUITests.swift in Sources */,
+				2B5315B61E2AEE7000985BA7 /* BaseScreen.swift in Sources */,
+				2B5315B81E2AEE7900985BA7 /* LoginScreen.swift in Sources */,
+				2B5315BE1E2AEEBC00985BA7 /* RestaurantDetailsScreen.swift in Sources */,
+				2B5315BA1E2AEE8400985BA7 /* TabBarScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
