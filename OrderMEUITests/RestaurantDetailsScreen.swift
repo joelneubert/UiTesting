@@ -18,8 +18,10 @@ class RestaurantDetailsScreen: TabBarScreen {
     func tapOnDetectTableCell() {
         tap(element: detectTableCell)
     }
-
     
+    func tapOnCallWaiterCell() {
+        tap(element: callWaiterCell)
+    }
 }
 
 class TableNumberSelector: RestaurantDetailsScreen{
@@ -39,4 +41,16 @@ class TableNumberSelector: RestaurantDetailsScreen{
         tap(element: selectTableButton)
     }
 }
+
+class CallWaiterAlert : RestaurantDetailsScreen {
+    
+    private let buttonBringAMenu = app.alerts["The waiter is on his way"].buttons["Bring a menu"]
+    
+    func tapOnButtonBringAMenu() {
+        tap(element: buttonBringAMenu)
+    }
+    
+}
+
+
 

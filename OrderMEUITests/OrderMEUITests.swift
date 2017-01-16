@@ -19,7 +19,7 @@ class OrderMEUITests: BaseTest {
     }
     
     func testCallWaiterForMenu() {
-        
+
         let loginScreen = LoginScreen()
         loginScreen.tapOnLoginLaterButton()
         
@@ -33,16 +33,15 @@ class OrderMEUITests: BaseTest {
         tableNumberSelector.typeIntoSelectTableField(text: "3")
         tableNumberSelector.tapOnSelectTableButton()
         
+        restaurantDetailScreen.tapOnCallWaiterCell()
         
-//        tablesQuery.staticTexts["Call a waiter"].tap()
-//        app.alerts["The waiter is on his way"].buttons["Bring a menu"].tap()
-//        
-//        let gotItAlert = app.alerts["Got it!"]
-//        
-//        waitForElementToAppear(format: "exists == true ", element: gotItAlert, time: 3.0)
-//        
-//        XCTAssert(gotItAlert.staticTexts["The waiter is on his way"].exists)
-//        
+        let callWaiterAlert = CallWaiterAlert()
+        callWaiterAlert.tapOnButtonBringAMenu()
+        
+        let gotItAlert = XCUIApplication().alerts["Got it!"]
+       
+        waitForElementToAppear(format: "exists == true ", element: gotItAlert, time: 3.0)
+        XCTAssert(gotItAlert.staticTexts["The waiter is on his way"].exists)
     }
     
 }
