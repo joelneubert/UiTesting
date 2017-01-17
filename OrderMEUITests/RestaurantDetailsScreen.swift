@@ -15,6 +15,10 @@ class RestaurantDetailsScreen: TabBarScreen {
     
     private let callWaiterCell = table.staticTexts["Call a waiter"]
     
+    override func visible(){
+        detectTableCell.waitToExist()
+    }
+    
     func tapOnDetectTableCell() {
         tap(element: detectTableCell)
     }
@@ -27,6 +31,15 @@ class RestaurantDetailsScreen: TabBarScreen {
 class TableNumberSelector: RestaurantDetailsScreen{
     private let selectTableField = app.textFields["@table_number_textfield"]
     private let selectTableButton = app.buttons["Select table"]
+    
+    override init() {
+        super.init()
+        visible()
+    }
+    
+    override func visible(){
+        selectTableButton.waitToExist()
+    }
     
     func tapOnSelectTableField() {
         tap(element: selectTableField)
@@ -46,11 +59,14 @@ class CallWaiterAlert : RestaurantDetailsScreen {
     
     private let buttonBringAMenu = app.alerts["The waiter is on his way"].buttons["Bring a menu"]
     
+    
     func tapOnButtonBringAMenu() {
         tap(element: buttonBringAMenu)
     }
     
 }
+
+
 
 
 

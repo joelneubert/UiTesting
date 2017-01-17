@@ -13,6 +13,10 @@ class TabBarScreen : BaseScreen {
     
     private let restaurantCell = table.staticTexts["Hookah Place"]
     
+    func visible(){
+        restaurantCell.waitToExist()
+    }
+    
     func tapOnRestaurantCell(){
         tap(element: restaurantCell)
     }

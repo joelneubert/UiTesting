@@ -13,6 +13,15 @@ class LoginScreen : BaseScreen {
     
     private let loginLaterButton = app.buttons["Log in later"]
     
+    override init(){
+        super.init()
+        visible()
+    }
+    
+    func visible(){
+        loginLaterButton.waitToExist()
+    }
+    
     func tapOnLoginLaterButton() {
         tap(element: loginLaterButton)
     }
