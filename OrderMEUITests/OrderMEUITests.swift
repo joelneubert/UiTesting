@@ -40,7 +40,8 @@ class OrderMEUITests: BaseTest {
         
         let gotItAlert = XCUIApplication().alerts["Got it!"]
        
-        waitForElementToAppear(format: "exists == true ", element: gotItAlert, time: 3.0)
+        //waitForElementToAppear(format: "exists == true ", element: gotItAlert, time: 3.0)
+        gotItAlert.waitToExist()
         XCTAssert(gotItAlert.staticTexts["The waiter is on his way"].exists)
     }
     
