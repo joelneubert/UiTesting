@@ -207,9 +207,9 @@
 		2B2EA7801CBB03C0001507DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2B3A98941E061D8900AF01DC /* Cells */,
 				2B3A98931E061D7900AF01DC /* Objects */,
 				2B665C411E2301BD005C4651 /* JsonTransforms */,
+				2B3A98941E061D8900AF01DC /* Cells */,
 				2B3A98921E061D6800AF01DC /* Networking */,
 				2B09DF341E2849D700EF2BEF /* Singletons */,
 				2B2EA7881CBB03D6001507DD /* Protocols.swift */,

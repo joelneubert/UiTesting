@@ -19,7 +19,7 @@ class OrderMEUITests: BaseTest {
     }
     
     func testCallWaiterForMenu() {
-
+        
         let loginScreen = LoginScreen()
         loginScreen.tapOnLoginLaterButton()
         
