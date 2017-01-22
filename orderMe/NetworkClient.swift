@@ -345,5 +345,40 @@ class NetworkClient {
         send(api: "/menu/orders", method: .get, parameters: nil, token: token, completion: response_completion )
     }
 
+    // For Testing 
+    
+    static func addPlace(placeJson: [String: AnyObject], completion: @escaping (_ place: Place?, _ error : NSError?) -> () ) {
+        func response_completion( _ response_result: String? , response_error: NSError? ) -> Void {
+            if response_error != nil {
+                completion(nil, response_error)
+                return
+            }
+            guard let json = response_result else {
+                completion(nil, NSError())
+                return
+            }
+            let place :Place? = Mapper<Place>().map(JSONString: json)
+            
+            completion(place, nil)
+        }
+        
+        send(api: "/places", method: .post, parameters: placeJson, token: "", completion: response_completion)
+        
+    }
+    
+    static func deletePlace(id: Int, completion: @escaping (_ success: Bool?, _ error : NSError?) -> () ) {
+        func response_completion( _ response_result: String? , response_error: NSError? ) -> Void {
+            if response_error != nil {
+                completion(nil, response_error)
+                return
+            }
+  
+            
+            completion(true, nil)
+        }
+        
+        send(api: "/places\(id)", method: .delete, parameters: nil, token: "", completion: response_completion)
+        
+    }
 
 }

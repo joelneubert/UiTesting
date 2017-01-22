@@ -6,12 +6,20 @@
 //  Copyright © 2017 Boris Gurtovoy. All rights reserved.
 //
 
-import Foundation
+import XCTest
 
 
 class TabBarScreen : BaseScreen {
     
-    private let restaurantCell = table.staticTexts["Hookah Place"]
+    private var restaurantCell : XCUIElement!
+    
+    override init(){
+        
+    }
+    
+     init(name: String) {
+        restaurantCell = BaseScreen.table.staticTexts[name]
+    }
     
     func visible(){
         restaurantCell.waitToExist()
