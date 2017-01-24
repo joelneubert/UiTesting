@@ -16,6 +16,7 @@ class OrderMEUITests: BaseTest {
     
     override func setUp() {
         super.setUp()
+        addPlaceToServer()
     }
     
     override func tearDown() {
@@ -24,44 +25,25 @@ class OrderMEUITests: BaseTest {
             XCTFail()
             return
         }
-        NetworkClient.deletePlace(id: idOfPlace) { (success, error) in
-            if error != nil {
-                XCTFail()
-                return
-            }
+        if !NetworkClient.deletePlace(id: idOfPlace) {
+            XCTFail()
         }
     }
     
     func addPlaceToServer() {
-//        NetworkClient.addPlace(placeJson: placeJson) { (place, error) in
-//            if error != nil {
-//                XCTFail()
-//                return
-//            }
-//            guard let place = place else {
-//                XCTFail()
-//                return
-//            }
-//            self.idPlace = place.id
-//        }
-        
-        let placeJson : [String : AnyObject] = [
-            "name" : placeName as AnyObject,
-            "address" : "Wilshire blvd, LA, CA" as AnyObject,
-            "phone" : "3236756008" as AnyObject,
-            "latitude" : "12.3123" as AnyObject,
-            "longitude" : "23.1312" as AnyObject,
-            "imagepath" : "http://www.gafollowers.com/wp-content/uploads/2014/06/hl4.jpg" as AnyObject
+        let placeJson : [String : String] = [
+            "name" : placeName,
+            "address" : "Wilshire blvd, LA, CA",
+            "phone" : "3236756008",
+            "latitude" : "12.3123",
+            "longitude" : "23.1312",
+            "imagepath" : "http://www.gafollowers.com/wp-content/uploads/2014/06/hl4.jpg"
         ]
-        
         let place = NetworkClient.addPlace(placeJson: placeJson)
-        print(place?.id)
         self.idPlace = place?.id
     }
     
     func testCallWaiterForMenu() {
-        addPlaceToServer()
-
         let loginScreen = LoginScreen()
         loginScreen.tapOnLoginLaterButton()
         

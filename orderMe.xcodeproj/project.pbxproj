@@ -42,6 +42,9 @@
 		2B665C431E2301DB005C4651 /* PlaceTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B665C421E2301DB005C4651 /* PlaceTransform.swift */; };
 		2B81B98F1E356F560021BFEE /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81B98E1E356F560021BFEE /* ServerManager.swift */; };
 		2B81B9911E3570F60021BFEE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81B9901E3570F60021BFEE /* Place.swift */; };
+		2B81B9931E357EA70021BFEE /* FacebookAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81B9921E357EA70021BFEE /* FacebookAuthentication.swift */; };
+		2B81B9951E3583EA0021BFEE /* ReservationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81B9941E3583EA0021BFEE /* ReservationTest.swift */; };
+		2B81B9971E3585650021BFEE /* ReservationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81B9961E3585650021BFEE /* ReservationScreen.swift */; };
 		2B982BA21D02335400151D88 /* MyOrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B982BA11D02335400151D88 /* MyOrdersController.swift */; };
 		2B982BA41D0240AB00151D88 /* myOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B982BA31D0240AB00151D88 /* myOrderCell.swift */; };
 		2BB087241E2AC91E00B10765 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB087231E2AC91E00B10765 /* OrderMEUITests.swift */; };
@@ -108,6 +111,9 @@
 		2B665C421E2301DB005C4651 /* PlaceTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTransform.swift; sourceTree = "<group>"; };
 		2B81B98E1E356F560021BFEE /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		2B81B9901E3570F60021BFEE /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		2B81B9921E357EA70021BFEE /* FacebookAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAuthentication.swift; sourceTree = "<group>"; };
+		2B81B9941E3583EA0021BFEE /* ReservationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationTest.swift; sourceTree = "<group>"; };
+		2B81B9961E3585650021BFEE /* ReservationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationScreen.swift; sourceTree = "<group>"; };
 		2B982BA11D02335400151D88 /* MyOrdersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrdersController.swift; sourceTree = "<group>"; };
 		2B982BA31D0240AB00151D88 /* myOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myOrderCell.swift; sourceTree = "<group>"; };
 		2BB087211E2AC91E00B10765 /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -274,8 +280,10 @@
 		2B5315B11E2AD3BF00985BA7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2BB087231E2AC91E00B10765 /* OrderMEUITests.swift */,
 				2B5315B21E2AD3DC00985BA7 /* BaseTest.swift */,
+				2BB087231E2AC91E00B10765 /* OrderMEUITests.swift */,
+				2B81B9921E357EA70021BFEE /* FacebookAuthentication.swift */,
+				2B81B9941E3583EA0021BFEE /* ReservationTest.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -287,6 +295,7 @@
 				2B5315B71E2AEE7900985BA7 /* LoginScreen.swift */,
 				2B5315B91E2AEE8400985BA7 /* TabBarScreen.swift */,
 				2B5315BD1E2AEEBC00985BA7 /* RestaurantDetailsScreen.swift */,
+				2B81B9961E3585650021BFEE /* ReservationScreen.swift */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -588,9 +597,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B81B9971E3585650021BFEE /* ReservationScreen.swift in Sources */,
 				2B81B98F1E356F560021BFEE /* ServerManager.swift in Sources */,
 				2B5315B31E2AD3DC00985BA7 /* BaseTest.swift in Sources */,
 				2BB087241E2AC91E00B10765 /* OrderMEUITests.swift in Sources */,
+				2B81B9951E3583EA0021BFEE /* ReservationTest.swift in Sources */,
+				2B81B9931E357EA70021BFEE /* FacebookAuthentication.swift in Sources */,
 				2B5315B61E2AEE7000985BA7 /* BaseScreen.swift in Sources */,
 				2B5315B81E2AEE7900985BA7 /* LoginScreen.swift in Sources */,
 				2B4539211E2DEA3D00A424E2 /* XCUIElementExtension.swift in Sources */,

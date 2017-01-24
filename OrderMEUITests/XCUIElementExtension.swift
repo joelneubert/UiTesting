@@ -8,7 +8,7 @@
 
 import XCTest
 
-private let defaultTimeoutInSeconds = 60.0
+private let defaultTimeoutInSeconds = 10.0
 
 extension XCUIElement {
     @discardableResult func waitToExist() -> XCUIElement {
@@ -20,8 +20,7 @@ extension XCUIElement {
         return self
     }
     
-    private func waitFor(_ expression: () -> Bool, failureMessage: String) {
-        
+    private func waitFor(_ expression: () -> Bool, failureMessage: String) { 
         let startTime = NSDate.timeIntervalSinceReferenceDate
         
         while !expression() {
