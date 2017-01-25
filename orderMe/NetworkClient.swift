@@ -13,8 +13,8 @@ import ObjectMapper
 import AlamofireImage
 
 
-//let base_url: String = "https://peaceful-spire-96979.herokuapp.com"
-let base_url: String = "http://localhost:8080"
+let base_url: String = "https://peaceful-spire-96979.herokuapp.com"
+//let base_url: String = "http://localhost:8080"
 
 
 class NetworkClient {

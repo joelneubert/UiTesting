@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import OrderME
 
 
 class ReservationTest : BaseTest {
@@ -19,35 +20,56 @@ class ReservationTest : BaseTest {
         super.tearDown()
     }
 
-    func testMakeFutureReservation() {
+    func testMakeFutureReservation() { // USER MUST TO BE LOGGED IN
+
+        let tabBarScreen = TabBarScreen(name: "Octopus Japaneese Restaurant")
+        tabBarScreen.visible()
+        tabBarScreen.tapOnRestaurantCell()
+        
+        let restaurantDetailsScreen = RestaurantDetailsScreen()
+        restaurantDetailsScreen.tapOnReservationCell()
+        
+        let reservationScreen = ReservationScreen()
+        reservationScreen.typePhoneNumber("3236756008")
+        reservationScreen.typeNumberOfPeople("4")
+        
         //setting future day and month
         let (day, month) = getDate(daysFromToday: 2)
-        print ("++++++++++++++Future day is \(day) and month is \(month)++++++++++++++++")
-  
-        let reservationScreen = ReservationScreen()
         
-        
-  //      XCTAssert(expenseDetails.getDateFromCell().contains("\(day) \(month)"), "found instead: \(expenseDetails.getDateFromCell())")
-    
-        
-        let app = XCUIApplication()
-        let tablesQuery = app.tables
-        tablesQuery.staticTexts["Octopus Japaneese Restaurant"].tap()
-        tablesQuery.staticTexts["Reservation"].tap()
-        
-        let phoneNumberTextField = app.textFields["Phone number"]
-        phoneNumberTextField.tap()
-        phoneNumberTextField.typeText("3236756008")
-        
-        let numberOfPeopleTextField = app.textFields["Number of people"]
-        numberOfPeopleTextField.tap()
-        numberOfPeopleTextField.tap()
-        numberOfPeopleTextField.typeText("4")
         reservationScreen.selectDate(month: month, day: day)
-        app.buttons["Book"].tap()
-        app.alerts["Success!"].buttons["OK"].tap()
+        reservationScreen.tapBookButton()
+        reservationScreen.tapOkButton()
         
-        // TODO get reservations and check this reservation
+/*       * next code checks the last reservation to be equal with the one is created by our test.
+         * However, server gives back only reservations, that were booked by the user that is asking for reservations.
+         * So we need to implement facebook login first and then merge this 2 tests
+        
+        
+        let reservationsOpt = ServerManager.getReservations()
+        guard let reservations = reservationsOpt else {
+            XCTFail()
+            return
+        }
+   
+        let reserve = reservations.last
+        guard let date = reserve?.date else {
+            XCTFail()
+            return
+        }
+        let calendar = Calendar.current
+        let hourReservation = calendar.component(.hour, from: date)
+        let minutesReservation = calendar.component(.minute, from: date)
+        let dayReservation = calendar.component(.day, from: date)
+        let monthReservation = calendar.component(.month, from: date)
+        
+        guard monthReservation == Int(month),
+              dayReservation == Int(day),
+              hourReservation == 12,
+            minutesReservation == 30 else {
+                XCTFail()
+                return
+        }
+     */
         
     }
     

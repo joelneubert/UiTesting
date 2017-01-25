@@ -25,7 +25,7 @@ class OrderMEUITests: BaseTest {
             XCTFail()
             return
         }
-        if !NetworkClient.deletePlace(id: idOfPlace) {
+        if !ServerManager.deletePlace(id: idOfPlace) {
             XCTFail()
         }
     }
@@ -39,7 +39,7 @@ class OrderMEUITests: BaseTest {
             "longitude" : "23.1312",
             "imagepath" : "http://www.gafollowers.com/wp-content/uploads/2014/06/hl4.jpg"
         ]
-        let place = NetworkClient.addPlace(placeJson: placeJson)
+        let place = ServerManager.addPlace(placeJson: placeJson)
         self.idPlace = place?.id
     }
     
