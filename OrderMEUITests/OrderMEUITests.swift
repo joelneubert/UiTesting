@@ -29,6 +29,10 @@ class OrderMEUITests: BaseTest {
             XCTFail()
         }
     }
+   
+    override func handleLocation() {
+        super.handleLocation()
+    }
     
     func addPlaceToServer() {
         let placeJson : [String : String] = [

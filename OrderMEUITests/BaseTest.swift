@@ -26,6 +26,15 @@ class BaseTest: XCTestCase{
         waitForExpectations(timeout: time, handler: nil)
     }
     
+    func handleLocation(){
+        addUIInterruptionMonitor(withDescription: "Allow Location") { (alert) -> Bool in
+            alert.buttons["Allow"].tap()
+            return true
+        }
+        XCUIApplication().tap()
+    }
+
+    
     func getDate(daysFromToday: Int) -> (day : String, month : String){
         var components = DateComponents()
         components.setValue(daysFromToday, for: .day)
@@ -41,6 +50,23 @@ class BaseTest: XCTestCase{
         
         return(futureDayString, futureMonthString )
     }
+    
+    func facebookLogin(){
+        let app = XCUIApplication()
+        app.buttons["Log in with Facebook"].tap()
+        
+        
+        let emailOrPhoneTextField = app.textFields["Email or Phone"]
+        emailOrPhoneTextField.tap()
+        emailOrPhoneTextField.typeText("idorov01@gmail.com")
+        
+        let facebookPasswordSecureTextField = app.secureTextFields["Facebook Password"]
+        facebookPasswordSecureTextField.tap()
+        facebookPasswordSecureTextField.typeText("testfocus01")
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 2).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.tap()
+        app.buttons["OK"].tap()
+    }
+
 }
 
 
