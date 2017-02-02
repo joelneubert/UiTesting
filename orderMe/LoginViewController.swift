@@ -27,6 +27,7 @@ class LoginViewController: UIViewController {
             else
             {
                 let loginButton = LoginButton(readPermissions: [ .publicProfile, .email ])
+                loginButton.loginBehavior = .web
                 loginButton.center = CGPoint(x: UIScreen.main.bounds.size.width / 2, y: UIScreen.main.bounds.size.height * 0.9)
                 loginButton.delegate = self
                 self.loginButtonFacebook = loginButton
