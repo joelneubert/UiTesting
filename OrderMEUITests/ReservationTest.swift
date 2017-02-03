@@ -20,8 +20,16 @@ class ReservationTest : BaseTest {
         super.tearDown()
     }
 
+    override func handleLocation() {
+        super.handleLocation()
+    }
+    
     func testMakeFutureReservation() { // USER MUST TO BE LOGGED IN
+//<<<<<<< HEAD
 
+//=======
+        facebookLogin()
+//>>>>>>> day2_facebook
         let tabBarScreen = TabBarScreen(name: "The Burger")
         tabBarScreen.visible()
         tabBarScreen.tapOnRestaurantCell()
