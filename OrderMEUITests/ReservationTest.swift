@@ -22,7 +22,7 @@ class ReservationTest : BaseTest {
 
     func testMakeFutureReservation() { // USER MUST TO BE LOGGED IN
 
-        let tabBarScreen = TabBarScreen(name: "Octopus Japaneese Restaurant")
+        let tabBarScreen = TabBarScreen(name: "The Burger")
         tabBarScreen.visible()
         tabBarScreen.tapOnRestaurantCell()
         

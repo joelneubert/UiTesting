@@ -17,7 +17,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
         [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        if ProcessInfo.processInfo.arguments.contains("deleteAllData") {
+            self.clearUserDefaults()
+        }
+        
         return true
+    }
+    
+    
+    func clearUserDefaults() {
+        let appDomainOpt: String? = Bundle.main.bundleIdentifier
+        guard let appDomain = appDomainOpt else { return }
+        UserDefaults.standard.removePersistentDomain(forName: appDomain)
+        UserDefaults.standard.synchronize()
+        let folders: [Any] = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)
+        let fm = FileManager()
+        for path in folders {
+            guard let path = path as? String else { continue }
+            try? fm.removeItem(atPath: path)
+        }
+        let folders_document: [Any] = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let fm1 = FileManager()
+        for path in folders_document {
+            guard let path = path as? String else { continue }
+            try? fm1.removeItem(atPath: path)
+        }
     }
 
     public func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
