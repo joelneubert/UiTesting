@@ -8,12 +8,18 @@
 
 import XCTest
 
+
 class BaseTest: XCTestCase{
+    
+    let app = XCUIApplication()
+    
     override func setUp() {
         super.setUp()
         
         continueAfterFailure = false
-        XCUIApplication().launch()
+        app.launchArguments = ["deleteAllData"]
+        app.launch()
+        
     }
 
     override func tearDown() {
@@ -53,16 +59,17 @@ class BaseTest: XCTestCase{
     
     func facebookLogin(){
         let app = XCUIApplication()
+        let user = TestUser()
         app.buttons["Log in with Facebook"].tap()
         
         
         let emailOrPhoneTextField = app.textFields["Email or Phone"]
         emailOrPhoneTextField.tap()
-        emailOrPhoneTextField.typeText("idorov01@gmail.com")
+        emailOrPhoneTextField.typeText(user.email)
         
         let facebookPasswordSecureTextField = app.secureTextFields["Facebook Password"]
         facebookPasswordSecureTextField.tap()
-        facebookPasswordSecureTextField.typeText("testfocus01")
+        facebookPasswordSecureTextField.typeText(user.password)
         app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 2).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.tap()
         app.buttons["OK"].tap()
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0DDB011E4480B40042AC82 /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0DDB001E4480B40042AC82 /* TestUser.swift */; };
 		2B13B0281E064472004A09D2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B13B0271E064472004A09D2 /* Menu.swift */; };
 		2B2EA7911CBB03D6001507DD /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA7821CBB03D6001507DD /* CategoryCell.swift */; };
 		2B2EA7921CBB03D6001507DD /* PlaceMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA7831CBB03D6001507DD /* PlaceMainMenu.swift */; };
@@ -47,7 +48,6 @@
 		2B982BA21D02335400151D88 /* MyOrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B982BA11D02335400151D88 /* MyOrdersController.swift */; };
 		2B982BA41D0240AB00151D88 /* myOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B982BA31D0240AB00151D88 /* myOrderCell.swift */; };
 		2BB087241E2AC91E00B10765 /* OrderMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB087231E2AC91E00B10765 /* OrderMEUITests.swift */; };
-		2BD4A1711E44297B00D5EE02 /* Singletone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD4A1701E44297B00D5EE02 /* Singletone.swift */; };
 		2BD9637E1CEDDE2B007913B0 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9637D1CEDDE2B007913B0 /* Order.swift */; };
 		2BE8372B1CFF818800506130 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE8372A1CFF818800506130 /* MyTabBarController.swift */; };
 		2BE8372D1CFF91D400506130 /* MyReservesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE8372C1CFF91D400506130 /* MyReservesController.swift */; };
@@ -81,6 +81,7 @@
 		1976FAADE5304B218A816420 /* Pods-OrderMEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderMEUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1C0503B5E49B7148C83F5D /* Pods-orderMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-orderMe/Pods-orderMe.release.xcconfig"; sourceTree = "<group>"; };
+		2B0DDB001E4480B40042AC82 /* TestUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUser.swift; sourceTree = "<group>"; };
 		2B13B0271E064472004A09D2 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		2B2EA7691CBB0377001507DD /* OrderME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2EA7781CBB0377001507DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,7 +127,6 @@
 		2BB087211E2AC91E00B10765 /* OrderMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB087231E2AC91E00B10765 /* OrderMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMEUITests.swift; sourceTree = "<group>"; };
 		2BB087251E2AC91E00B10765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BD4A1701E44297B00D5EE02 /* Singletone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singletone.swift; sourceTree = "<group>"; };
 		2BD9637D1CEDDE2B007913B0 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		2BE8372A1CFF818800506130 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		2BE8372C1CFF91D400506130 /* MyReservesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReservesController.swift; sourceTree = "<group>"; };
@@ -320,7 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				2B81B98E1E356F560021BFEE /* ServerManager.swift */,
-				2BD4A1701E44297B00D5EE02 /* Singletone.swift */,
+				2B0DDB001E4480B40042AC82 /* TestUser.swift */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -613,10 +613,10 @@
 				2BF9DF161E3815DE001CB94E /* User.swift in Sources */,
 				2B81B9951E3583EA0021BFEE /* ReservationTest.swift in Sources */,
 				2B81B9931E357EA70021BFEE /* FacebookAuthentication.swift in Sources */,
+				2B0DDB011E4480B40042AC82 /* TestUser.swift in Sources */,
 				2BF9DF101E38151C001CB94E /* Reserve.swift in Sources */,
 				2B5315B61E2AEE7000985BA7 /* BaseScreen.swift in Sources */,
 				2B5315B81E2AEE7900985BA7 /* LoginScreen.swift in Sources */,
-				2BD4A1711E44297B00D5EE02 /* Singletone.swift in Sources */,
 				2BF9DF111E381529001CB94E /* Place.swift in Sources */,
 				2B4539211E2DEA3D00A424E2 /* XCUIElementExtension.swift in Sources */,
 				2B5315BE1E2AEEBC00985BA7 /* RestaurantDetailsScreen.swift in Sources */,

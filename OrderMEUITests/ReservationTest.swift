@@ -11,6 +11,7 @@ import XCTest
 
 
 class ReservationTest : BaseTest {
+    var idOfReservation : Int?
     
     override func setUp() {
         super.setUp()
@@ -18,18 +19,25 @@ class ReservationTest : BaseTest {
     
     override func tearDown() {
         super.tearDown()
+        guard let id = idOfReservation else {
+            XCTFail()
+            return
+        }
+        if !ServerManager.deleteReserve(id: id) {
+            XCTFail()
+            return
+        }
     }
 
     override func handleLocation() {
         super.handleLocation()
     }
     
-    func testMakeFutureReservation() { // USER MUST TO BE LOGGED IN
-//<<<<<<< HEAD
-
-//=======
+    
+    
+    func testMakeFutureReservation() { 
         facebookLogin()
-//>>>>>>> day2_facebook
+
         let tabBarScreen = TabBarScreen(name: "The Burger")
         tabBarScreen.visible()
         tabBarScreen.tapOnRestaurantCell()
@@ -48,11 +56,7 @@ class ReservationTest : BaseTest {
         reservationScreen.tapBookButton()
         reservationScreen.tapOkButton()
         
-/*       * next code checks the last reservation to be equal with the one is created by our test.
-         * However, server gives back only reservations, that were booked by the user that is asking for reservations.
-         * So we need to implement facebook login first and then merge this 2 tests
-        
-        
+
         let reservationsOpt = ServerManager.getReservations()
         guard let reservations = reservationsOpt else {
             XCTFail()
@@ -60,24 +64,30 @@ class ReservationTest : BaseTest {
         }
    
         let reserve = reservations.last
-        guard let date = reserve?.date else {
+        guard let date = reserve?.date,
+              let id = reserve?.id else {
             XCTFail()
             return
         }
+        self.idOfReservation = id
+        
         let calendar = Calendar.current
         let hourReservation = calendar.component(.hour, from: date)
         let minutesReservation = calendar.component(.minute, from: date)
         let dayReservation = calendar.component(.day, from: date)
-        let monthReservation = calendar.component(.month, from: date)
-        
-        guard monthReservation == Int(month),
-              dayReservation == Int(day),
-              hourReservation == 12,
+//        let monthReservation = calendar.component(.month, from: date)
+
+        guard let dayReserve = Int(day) else {
+            XCTFail()
+            return
+        }
+        guard  dayReservation == dayReserve,
+              hourReservation == 0,
             minutesReservation == 30 else {
                 XCTFail()
                 return
         }
-     */
+     
         
     }
     

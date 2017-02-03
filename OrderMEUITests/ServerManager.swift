@@ -17,7 +17,6 @@ import Alamofire_Synchronous
 let base_url: String = "https://peaceful-spire-96979.herokuapp.com"
 //let base_url: String = "http://localhost:8080"
 
-let testToken = "thisistesttoken"
 
 class ServerManager {
     
@@ -51,7 +50,7 @@ class ServerManager {
         let headers = [
             "Content-Type": "application/json; charset=utf-8",
             "Accept": "application/json",
-            "Authorization" : "Token \(testToken)"
+            "Authorization" : "Token \(TestUser().token)"
             ]
         let response = Alamofire.request(base_url + "/places/reservations", method: .get, parameters: nil, encoding: JSONEncoding.default, headers : headers).responseJSON()
          if let json = response.result.value {
@@ -59,6 +58,15 @@ class ServerManager {
             return reserves
         }
         return nil
+    }
+    
+    static func deleteReserve(id: Int) -> Bool {
+        let headers = [
+            "Content-Type": "application/json; charset=utf-8",
+            "Accept": "application/json",
+            ]
+        let response = Alamofire.request(base_url + "/places/reservations/\(id)", method: .delete, parameters: nil, encoding: JSONEncoding.default, headers : headers).responseJSON()
+        return response.result.isSuccess
     }
     
 }
