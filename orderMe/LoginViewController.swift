@@ -15,6 +15,8 @@ class LoginViewController: UIViewController {
     
     var cameFromReserveOrOrderProcess = false
     
+    var loginButtonFacebook : LoginButton?
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
@@ -25,8 +27,11 @@ class LoginViewController: UIViewController {
             else
             {
                 let loginButton = LoginButton(readPermissions: [ .publicProfile, .email ])
+                loginButton.loginBehavior = .web
                 loginButton.center = CGPoint(x: UIScreen.main.bounds.size.width / 2, y: UIScreen.main.bounds.size.height * 0.9)
                 loginButton.delegate = self
+                self.loginButtonFacebook = loginButton
+                self.loginButtonFacebook?.delegate = self
                 self.view.addSubview(loginButton)
             }
         }
@@ -35,6 +40,12 @@ class LoginViewController: UIViewController {
     func loginToServerAfterFacebook() {
         guard let accessToken = AccessToken.current?.authenticationToken else { return }
         NetworkClient.login(accessToken: accessToken) { (user, error) in
+            if error != nil {
+                self.errorAlert()
+                guard let loginButtonFacebook = self.loginButtonFacebook else { return }
+                self.loginButtonDidLogOut(loginButtonFacebook)
+                return
+            }
             SingleTone.shareInstance.user = user
             self.successLogin()
         }

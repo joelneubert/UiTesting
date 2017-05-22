@@ -16,7 +16,9 @@ class SimulatorTableId: UIViewController {
     
     override func viewDidLoad() {
         navigationController?.isNavigationBarHidden = false
+        self.tid.accessibilityIdentifier = "@table_number_textfield"
     }
+
     
     
     
