@@ -10,21 +10,18 @@
 
 import XCTest
 
-class OrderMEUITests: XCTestCase {
-    
+class OrderMEUITests: BaseTest {
     
     override func setUp() {
         super.setUp()
-        continueAfterFailure = false
-        XCUIApplication().launch()
     }
-    
-    
-
     override func tearDown() {
         super.tearDown()
     }
     
+    override func handleLocation() {
+        super.handleLocation()
+    }
 
     func testCallAWaiter() {
     
@@ -40,10 +37,12 @@ class OrderMEUITests: XCTestCase {
         app.alerts["The waiter is on his way"].buttons["Bring a menu"].tap()
         
         let gotItAlert = app.alerts["Got it!"]
-        sleep(2)
+        
+        waitForElementToAppear(format: "exists == true", element: gotItAlert, time: 5.0)
+        
         XCTAssert(gotItAlert.staticTexts["The waiter is on his way"].exists)
         
     }
-  
+    
 }
 
