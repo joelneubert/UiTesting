@@ -18,6 +18,10 @@ class BaseScreen  {
         element.tap()
     }
     
+    func type(string: String, field: XCUIElement){
+        tap(element: field)
+        field.typeText(string)
+    }
     
     func tablesQuery() -> XCUIElementQuery {
         return BaseScreen.table
