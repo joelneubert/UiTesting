@@ -37,7 +37,15 @@ class OrderMEUITests: BaseTest {
         
         let restaurantDetailsScreen = RestaurantDetailsScreen()
         restaurantDetailsScreen.tapOnDetectTableCell()
+        //restaurantDetailsScreen.tapOnMenuCell()
+        //restaurantDetailsScreen.tapOnReservationCell()
+        //restaurantDetailsScreen.tapOnCallAWaiterCell()
         
+        let detectTableScreen = DetectTableScreen()
+        detectTableScreen.tapOnDetectTableTextField()
+        detectTableScreen.typeTextInDetectTableTextField(text: "5")
+        detectTableScreen.tapOnSelectTableButton()
+                
         /*
         tablesQuery.staticTexts["Detect table"].tap()
         app.textFields["@table_number_textfield"].tap()
