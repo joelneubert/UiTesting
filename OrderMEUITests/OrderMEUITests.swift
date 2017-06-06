@@ -13,7 +13,7 @@ import XCTest
 class OrderMEUITests: BaseTest {
     
     private let placeName = "Quince"
-    
+    private let numberOfTable = "5"
     
     override func setUp() {
         super.setUp()
@@ -38,20 +38,19 @@ class OrderMEUITests: BaseTest {
         let restaurantDetailsScreen = RestaurantDetailsScreen()
         restaurantDetailsScreen.tapOnDetectTableCell()
         
-        /*
-        tablesQuery.staticTexts["Detect table"].tap()
-        app.textFields["@table_number_textfield"].tap()
-        app.textFields["@table_number_textfield"].typeText("5")
-        app.buttons["Select table"].tap()
-        app.tables.staticTexts["Call a waiter"].tap()
-        app.alerts["The waiter is on his way"].buttons["Bring a menu"].tap()
+        let tableDetection = TableDetection()
+        tableDetection.typeIntoSelectTableField(text: numberOfTable.description)
+        tableDetection.tapOnSelectTableButton()
+        
+        restaurantDetailsScreen.tapOnCallAWaiterCell()
+        
+        let callWaiterAlert = CallWaiterAlert()
+        callWaiterAlert.tapOnBringAMenuButton()
         
         let gotItAlert = app.alerts["Got it!"]
-        
-        waitForElementToAppear(format: "exists == true", element: gotItAlert, time: 5.0)
+        gotItAlert.waitToExist()
         
         XCTAssert(gotItAlert.staticTexts["The waiter is on his way"].exists)
- */
         
     }
     

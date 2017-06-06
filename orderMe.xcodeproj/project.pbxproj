@@ -361,7 +361,7 @@
 				TargetAttributes = {
 					2B2EA7681CBB0377001507DD = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = WN6V8DZ29J;
+						DevelopmentTeam = M7JD753CU6;
 						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -628,11 +628,11 @@
 				CODE_SIGN_ENTITLEMENTS = orderMe/OrderME.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = WN6V8DZ29J;
+				DEVELOPMENT_TEAM = M7JD753CU6;
 				INFOPLIST_FILE = orderMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.borisgurtovoy.orderme;
+				PRODUCT_BUNDLE_IDENTIFIER = com.borisgurtovoy.orderme2;
 				PRODUCT_NAME = OrderME;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -649,11 +649,11 @@
 				CODE_SIGN_ENTITLEMENTS = orderMe/OrderME.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = WN6V8DZ29J;
+				DEVELOPMENT_TEAM = M7JD753CU6;
 				INFOPLIST_FILE = orderMe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.borisgurtovoy.orderme;
+				PRODUCT_BUNDLE_IDENTIFIER = com.borisgurtovoy.orderme2;
 				PRODUCT_NAME = OrderME;
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
