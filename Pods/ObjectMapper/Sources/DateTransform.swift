@@ -53,5 +53,3 @@ open class DateTransform: TransformType {
 		return nil
 	}
 }
-
-

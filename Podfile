@@ -9,7 +9,7 @@ pod 'ObjectMapper', '~> 2.0’
 pod 'AlamofireImage', '~> 3.1’
 pod 'FacebookCore'
 pod 'FacebookLogin'
-pod 'FacebookShare'
+
 end
 
 target “OrderMEUITests” do

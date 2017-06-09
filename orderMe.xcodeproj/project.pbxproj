@@ -43,12 +43,15 @@
 		2BD80F7B1EE1141700C57A89 /* XCUIElementExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD80F7A1EE1141700C57A89 /* XCUIElementExtension.swift */; };
 		2BD80F7D1EE117B500C57A89 /* TabBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD80F7C1EE117B500C57A89 /* TabBarScreen.swift */; };
 		2BD80F7F1EE11AEE00C57A89 /* RestaurantDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD80F7E1EE11AEE00C57A89 /* RestaurantDetailsScreen.swift */; };
+		2BD80F821EEA4D6000C57A89 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD80F811EEA4D6000C57A89 /* ServerManager.swift */; };
+		2BD80F831EEA502C00C57A89 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA78F1CBB03D6001507DD /* Place.swift */; };
 		2BD9637E1CEDDE2B007913B0 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9637D1CEDDE2B007913B0 /* Order.swift */; };
 		2BE8372B1CFF818800506130 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE8372A1CFF818800506130 /* MyTabBarController.swift */; };
 		2BE8372D1CFF91D400506130 /* MyReservesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE8372C1CFF91D400506130 /* MyReservesController.swift */; };
 		2BE8372F1CFF9EE800506130 /* FutureReserveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE8372E1CFF9EE800506130 /* FutureReserveCell.swift */; };
 		2BE837311CFF9EF300506130 /* PastReserveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE837301CFF9EF300506130 /* PastReserveCell.swift */; };
 		2BE837331CFFA10000506130 /* Reserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE837321CFFA10000506130 /* Reserve.swift */; };
+		9FDFB94A331208B7D8FE4AA3 /* Pods_OrderMEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E078C118644F1F4B98483F /* Pods_OrderMEUITests.framework */; };
 		E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +111,7 @@
 		2BD80F7A1EE1141700C57A89 /* XCUIElementExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCUIElementExtension.swift; sourceTree = "<group>"; };
 		2BD80F7C1EE117B500C57A89 /* TabBarScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarScreen.swift; sourceTree = "<group>"; };
 		2BD80F7E1EE11AEE00C57A89 /* RestaurantDetailsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsScreen.swift; sourceTree = "<group>"; };
+		2BD80F811EEA4D6000C57A89 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		2BD9637D1CEDDE2B007913B0 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		2BE8372A1CFF818800506130 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		2BE8372C1CFF91D400506130 /* MyReservesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReservesController.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FDFB94A331208B7D8FE4AA3 /* Pods_OrderMEUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +273,7 @@
 		2BCFC4141ED3F67700761283 /* OrderMEUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2BD80F801EEA4D3F00C57A89 /* Support */,
 				2BD80F751EE110CB00C57A89 /* Screens */,
 				2BCFC4151ED3F67700761283 /* OrderMEUITests.swift */,
 				2BCFC4171ED3F67700761283 /* Info.plist */,
@@ -286,6 +292,14 @@
 				2BD80F7E1EE11AEE00C57A89 /* RestaurantDetailsScreen.swift */,
 			);
 			name = Screens;
+			sourceTree = "<group>";
+		};
+		2BD80F801EEA4D3F00C57A89 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				2BD80F811EEA4D6000C57A89 /* ServerManager.swift */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 		C9DF39D983637B40F1924EE8 /* Pods */ = {
@@ -335,9 +349,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BCFC41C1ED3F67700761283 /* Build configuration list for PBXNativeTarget "OrderMEUITests" */;
 			buildPhases = (
+				F021FECAA0EBB4453EEB2B16 /* [CP] Check Pods Manifest.lock */,
 				2BCFC40F1ED3F67700761283 /* Sources */,
 				2BCFC4101ED3F67700761283 /* Frameworks */,
 				2BCFC4111ED3F67700761283 /* Resources */,
+				651C1F9184F29FF55F10A70F /* [CP] Embed Pods Frameworks */,
+				08C4CACE573A84D857D502B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -416,6 +433,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		08C4CACE573A84D857D502B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		651C1F9184F29FF55F10A70F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		842538B1ECA89D2A457917D9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,6 +491,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-orderMe/Pods-orderMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F021FECAA0EBB4453EEB2B16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F6C86F09D9342C1C1C5AF030 /* [CP] Copy Pods Resources */ = {
@@ -508,11 +570,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BD80F821EEA4D6000C57A89 /* ServerManager.swift in Sources */,
 				2BCFC41E1ED7DCA800761283 /* BaseTest.swift in Sources */,
 				2BCFC4161ED3F67700761283 /* OrderMEUITests.swift in Sources */,
 				2BD80F791EE111AD00C57A89 /* BaseScreen.swift in Sources */,
 				2BD80F7B1EE1141700C57A89 /* XCUIElementExtension.swift in Sources */,
 				2BD80F771EE110F700C57A89 /* LoginScreen.swift in Sources */,
+				2BD80F831EEA502C00C57A89 /* Place.swift in Sources */,
 				2BD80F7F1EE11AEE00C57A89 /* RestaurantDetailsScreen.swift in Sources */,
 				2BD80F7D1EE117B500C57A89 /* TabBarScreen.swift in Sources */,
 			);
@@ -662,6 +726,7 @@
 		};
 		2BCFC41A1ED3F67700761283 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1976FAADE5304B218A816420 /* Pods-OrderMEUITests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -679,6 +744,7 @@
 		};
 		2BCFC41B1ED3F67700761283 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1E6C06FD11E1DB88A716D9 /* Pods-OrderMEUITests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
