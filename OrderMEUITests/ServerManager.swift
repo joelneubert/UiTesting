@@ -30,5 +30,14 @@ class ServerManager  {
         return nil
     }
     
+    static func deletePlace(id: Int) -> Bool {
+        let headers = [
+            "Content-Type" : "application/json"
+        ]
+        
+        let response = Alamofire.request(base_url + "/places/\(id)", method: .delete, parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON()
+        return response.result.isSuccess
+    }
+    
 
 }

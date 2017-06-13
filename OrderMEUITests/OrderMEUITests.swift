@@ -23,6 +23,13 @@ class OrderMEUITests: BaseTest {
     }
     override func tearDown() {
         super.tearDown()
+        guard let idOfPlace = idPlace else {
+            XCTFail()
+            return
+        }
+        if !ServerManager.deletePlace(id: idOfPlace)  {
+            XCTFail()
+        }
     }
     
     override func handleLocation() {
@@ -69,8 +76,10 @@ class OrderMEUITests: BaseTest {
         gotItAlert.waitToExist()
         
         XCTAssert(gotItAlert.staticTexts["The waiter is on his way"].exists)
-
+        
+        
     }
+    
     
 }
 

@@ -27,7 +27,7 @@ class BaseTest: XCTestCase {
         expectation(for: exists, evaluatedWith:element, handler: nil)
         waitForExpectations(timeout: time, handler: nil)
     }
-
+    
 }
 
 // this is my change
@@ -42,4 +42,26 @@ extension BaseTest {
         XCUIApplication().tap()
     }
 }
+
+
+// MARK : facebook authorization
+extension BaseTest {
+    func facebookLogin() {
+        //let app = XCUIApplication()
+        let user = TestUser()
+        app.buttons["Continue with Facebook"].tap()
+        
+        let webViewsQuery = app.webViews
+        //let emailOrPhoneTextField = webViewsQuery.textFields["Email or Phone"]
+        //emailOrPhoneTextField.tap()
+        //emailOrPhoneTextField.typeText(user.email)
+        webViewsQuery.secureTextFields["Facebook Password"].typeText(user.password)
+        webViewsQuery.buttons["Log In"].tap()
+    
+        app.webViews.buttons["Log In"].tap()
+        app.buttons["OK"].tap()
+    }
+    
+}
+
 
