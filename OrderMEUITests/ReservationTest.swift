@@ -11,6 +11,8 @@ import XCTest
 
 class ReservationTest: BaseTest {
     
+    let placeName = "Quince"
+    
     override func setUp() {
         super.setUp()
     }
@@ -19,8 +21,22 @@ class ReservationTest: BaseTest {
         super.tearDown()
     }
     
-    func testReservation() {
-        facebookLogin()
+    func testCalendar() {
+        
+        let loginScreen = LoginScreen()
+        loginScreen.tapOnLoginLaterButton()
+        
+        let tabBarScreen = TabBarScreen(name: placeName)
+        tabBarScreen.visible()
+        tabBarScreen.tapOnRestaurantCell()
+        let restaurantDetailsScreen = RestaurantDetailsScreen()
+        restaurantDetailsScreen.tapOnReservation()
+        
+        
+      let (day, month) = getDate(daysFromToday: 2)
+      let reservationScreen = ReservationScreen()
+      reservationScreen.selectDate(month: month, day: day)
+        
     }
     
 

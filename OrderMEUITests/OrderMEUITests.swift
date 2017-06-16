@@ -77,7 +77,6 @@ class OrderMEUITests: BaseTest {
         
         XCTAssert(gotItAlert.staticTexts["The waiter is on his way"].exists)
         
-        
     }
     
     

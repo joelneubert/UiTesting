@@ -12,6 +12,7 @@ class RestaurantDetailsScreen: TabBarScreen {
     
     private let detectTableCell = table.staticTexts["Detect table"]
     private let callAWaiterCell = table.staticTexts["Call a waiter"]
+    private let reservationCell = table.staticTexts["Reservation"]
     
     
     override func visible() {
@@ -25,6 +26,10 @@ class RestaurantDetailsScreen: TabBarScreen {
     
     func tapOnCallAWaiterCell() {
         tap(element: callAWaiterCell)
+    }
+    
+    func tapOnReservation() {
+        tap(element: reservationCell)
     }
     
 }

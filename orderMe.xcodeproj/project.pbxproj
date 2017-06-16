@@ -48,6 +48,7 @@
 		2BD9637E1CEDDE2B007913B0 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD9637D1CEDDE2B007913B0 /* Order.swift */; };
 		2BDAF05C1EEF9693008E5693 /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAF05B1EEF9693008E5693 /* TestUser.swift */; };
 		2BDAF05E1EEF98C7008E5693 /* ReservationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAF05D1EEF98C7008E5693 /* ReservationTest.swift */; };
+		2BDAF0601EF39223008E5693 /* ReservationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAF05F1EF39223008E5693 /* ReservationScreen.swift */; };
 		2BE8372B1CFF818800506130 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE8372A1CFF818800506130 /* MyTabBarController.swift */; };
 		2BE8372D1CFF91D400506130 /* MyReservesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE8372C1CFF91D400506130 /* MyReservesController.swift */; };
 		2BE8372F1CFF9EE800506130 /* FutureReserveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE8372E1CFF9EE800506130 /* FutureReserveCell.swift */; };
@@ -117,6 +118,7 @@
 		2BD9637D1CEDDE2B007913B0 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		2BDAF05B1EEF9693008E5693 /* TestUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUser.swift; sourceTree = "<group>"; };
 		2BDAF05D1EEF98C7008E5693 /* ReservationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationTest.swift; sourceTree = "<group>"; };
+		2BDAF05F1EF39223008E5693 /* ReservationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationScreen.swift; sourceTree = "<group>"; };
 		2BE8372A1CFF818800506130 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		2BE8372C1CFF91D400506130 /* MyReservesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReservesController.swift; sourceTree = "<group>"; };
 		2BE8372E1CFF9EE800506130 /* FutureReserveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureReserveCell.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 				2BD80F781EE111AD00C57A89 /* BaseScreen.swift */,
 				2BD80F7C1EE117B500C57A89 /* TabBarScreen.swift */,
 				2BD80F7E1EE11AEE00C57A89 /* RestaurantDetailsScreen.swift */,
+				2BDAF05F1EF39223008E5693 /* ReservationScreen.swift */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDAF0601EF39223008E5693 /* ReservationScreen.swift in Sources */,
 				2BD80F821EEA4D6000C57A89 /* ServerManager.swift in Sources */,
 				2BCFC41E1ED7DCA800761283 /* BaseTest.swift in Sources */,
 				2BCFC4161ED3F67700761283 /* OrderMEUITests.swift in Sources */,

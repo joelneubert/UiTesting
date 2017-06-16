@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if ProcessInfo.processInfo.arguments.contains("deleteAllData") {
             self.clearUserDefaults()
             LoginManager().logOut()
+            
         }
         
         return true

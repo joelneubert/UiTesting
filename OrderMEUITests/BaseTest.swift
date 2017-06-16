@@ -16,6 +16,7 @@ class BaseTest: XCTestCase {
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
+        app.launchArguments = ["deleteAllData"]
         app.launch()
     }
     override func tearDown() {
@@ -27,6 +28,7 @@ class BaseTest: XCTestCase {
         expectation(for: exists, evaluatedWith:element, handler: nil)
         waitForExpectations(timeout: time, handler: nil)
     }
+    
     
 }
 
@@ -62,6 +64,30 @@ extension BaseTest {
         app.buttons["OK"].tap()
     }
     
+}
+
+
+// MARK : Calendar
+extension BaseTest {
+    func getDate(daysFromToday : Int) -> (day: String, month: String) {
+        var components = DateComponents()
+        components.setValue(daysFromToday, for: .day)
+        
+        let today = NSDate()
+        let futureDate = NSCalendar.current.date(byAdding: components, to: today as Date)
+        guard let fDate = futureDate else {
+            return ("","")
+        }
+        let futureDay = NSCalendar.current.component(.day, from: fDate)
+        let futureDayString = String(futureDay)
+        let futureMonth = NSCalendar.current.component(.month, from: fDate)
+        
+        let dateFormat = DateFormatter()
+        let futureMonthString = dateFormat.shortMonthSymbols[futureMonth - 1]
+        
+        return (futureDayString, futureMonthString)
+        
+    }
 }
 
 
