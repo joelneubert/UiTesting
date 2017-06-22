@@ -16,21 +16,28 @@ class BaseTest: XCTestCase {
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
+        app.launchArguments = ["deleteAllData"]
         app.launch()
     }
     override func tearDown() {
         super.tearDown()
     }
     
+//    func waitForElementToAppear(format: String, element: AnyObject, time: Double){
+//        let exists = NSPredicate(format: format)
+//        expectation(for: exists, evaluatedWith:element, handler: nil)
+//        waitForExpectations(timeout: time, handler: nil)
+//    }
+    
+// Alternative way to use XCTWaiter()
+    
     func waitForElementToAppear(format: String, element: AnyObject, time: Double){
         let exists = NSPredicate(format: format)
-        expectation(for: exists, evaluatedWith:element, handler: nil)
-        waitForExpectations(timeout: time, handler: nil)
+        let myExpectation = XCTNSPredicateExpectation(predicate: exists, object: element)
+        XCTWaiter().wait(for: [myExpectation], timeout: time)
     }
 
 }
-
-// this is my change
 
 // MARK : handleLocation
 extension BaseTest {
