@@ -18,8 +18,9 @@ class TabBarScreen : BaseScreen  {
     }
     
     init(name : String) {
+        super.init()
         restaurantCell = BaseScreen.table.staticTexts[name]
-        
+        visible()
     }
     
     func visible() {
@@ -29,6 +30,5 @@ class TabBarScreen : BaseScreen  {
     func tapOnRestaurantCell() {
         tap(element: restaurantCell)
     }
-    
     
 }

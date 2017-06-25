@@ -268,11 +268,10 @@
 		2BCFC4141ED3F67700761283 /* OrderMEUITests */ = {
 			isa = PBXGroup;
 			children = (
+				93D46F4E1EFB53F90056D493 /* Extention */,
+				93D46F4D1EFB53DC0056D493 /* Tests */,
 				2BD80F751EE110CB00C57A89 /* Screens */,
-				2BCFC4151ED3F67700761283 /* OrderMEUITests.swift */,
 				2BCFC4171ED3F67700761283 /* Info.plist */,
-				2BCFC41D1ED7DCA800761283 /* BaseTest.swift */,
-				2BD80F7A1EE1141700C57A89 /* XCUIElementExtension.swift */,
 			);
 			path = OrderMEUITests;
 			sourceTree = "<group>";
@@ -286,6 +285,23 @@
 				2BD80F7E1EE11AEE00C57A89 /* RestaurantDetailsScreen.swift */,
 			);
 			name = Screens;
+			sourceTree = "<group>";
+		};
+		93D46F4D1EFB53DC0056D493 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2BCFC41D1ED7DCA800761283 /* BaseTest.swift */,
+				2BCFC4151ED3F67700761283 /* OrderMEUITests.swift */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		93D46F4E1EFB53F90056D493 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				2BD80F7A1EE1141700C57A89 /* XCUIElementExtension.swift */,
+			);
+			name = Extention;
 			sourceTree = "<group>";
 		};
 		C9DF39D983637B40F1924EE8 /* Pods */ = {

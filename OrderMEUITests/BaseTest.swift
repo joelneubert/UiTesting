@@ -30,10 +30,9 @@ class BaseTest: XCTestCase {
 
 }
 
-// this is my change
-
-// MARK : handleLocation
 extension BaseTest {
+    
+    // MARK : handleLocation
     func handleLocation(){
         addUIInterruptionMonitor(withDescription: "Allow Location") { (alert) -> Bool in
             alert.buttons["Allow"].tap()
