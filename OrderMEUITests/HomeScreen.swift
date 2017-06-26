@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class TabBarScreen : BaseScreen  {
+class HomeScreen : BaseScreen  {
 
     private var restaurantCell : XCUIElement!
     
@@ -18,8 +18,9 @@ class TabBarScreen : BaseScreen  {
     }
     
     init(name : String) {
+        super.init()
         restaurantCell = BaseScreen.table.staticTexts[name]
-        
+        visible()
     }
     
     func visible() {

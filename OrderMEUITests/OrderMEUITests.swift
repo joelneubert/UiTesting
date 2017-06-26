@@ -55,9 +55,8 @@ class OrderMEUITests: BaseTest {
         let loginScreen = LoginScreen()
         loginScreen.tapOnLoginLaterButton()
         
-        let tabBarScreen = TabBarScreen(name: placeName)
-        tabBarScreen.visible()
-        tabBarScreen.tapOnRestaurantCell()
+        let homeScreen = HomeScreen(name: placeName)
+        homeScreen.tapOnRestaurantCell()
         
         let restaurantDetailsScreen = RestaurantDetailsScreen()
         restaurantDetailsScreen.tapOnDetectTableCell()

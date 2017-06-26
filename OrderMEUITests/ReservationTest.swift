@@ -26,18 +26,17 @@ class ReservationTest: BaseTest {
         let loginScreen = LoginScreen()
         loginScreen.tapOnLoginLaterButton()
         
-        let tabBarScreen = TabBarScreen(name: placeName)
-        tabBarScreen.visible()
-        tabBarScreen.tapOnRestaurantCell()
+        let homeScreen = HomeScreen(name: placeName)
+        homeScreen.tapOnRestaurantCell()
         let restaurantDetailsScreen = RestaurantDetailsScreen()
         restaurantDetailsScreen.tapOnReservation()
         
         
-      let (day, month) = getDate(daysFromToday: 2)
-      let reservationScreen = ReservationScreen()
-      reservationScreen.selectDate(month: month, day: day)
+        let (day, month) = getDate(daysFromToday: 2)
+        let reservationScreen = ReservationScreen()
+        reservationScreen.selectDate(month: month, day: day)
         
     }
     
-
+    
 }

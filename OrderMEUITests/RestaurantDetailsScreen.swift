@@ -8,17 +8,16 @@
 
 import UIKit
 
-class RestaurantDetailsScreen: TabBarScreen {
+class RestaurantDetailsScreen: BaseScreen {
     
     private let detectTableCell = table.staticTexts["Detect table"]
     private let callAWaiterCell = table.staticTexts["Call a waiter"]
     private let reservationCell = table.staticTexts["Reservation"]
     
     
-    override func visible() {
+    override init() {
         detectTableCell.waitToExist()
     }
-    
     
     func tapOnDetectTableCell() {
         tap(element: detectTableCell)
@@ -34,7 +33,7 @@ class RestaurantDetailsScreen: TabBarScreen {
     
 }
 
-class TableDetection : TabBarScreen {
+class TableDetection : HomeScreen {
     private let selectTableField = app.textFields["@table_number_textfield"]
     private let selectTableButton = app.buttons["Select table"]
     
@@ -61,7 +60,7 @@ class TableDetection : TabBarScreen {
     
 }
 
-class CallWaiterAlert : TabBarScreen {
+class CallWaiterAlert : HomeScreen {
     private let bringAMenuButton = app.alerts["The waiter is on his way"].buttons["Bring a menu"]
     
     func tapOnBringAMenuButton() {
