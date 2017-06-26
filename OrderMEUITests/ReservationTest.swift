@@ -15,17 +15,18 @@ class ReservationTest: BaseTest {
     
     override func setUp() {
         super.setUp()
+        facebookLogin()
     }
     
     override func tearDown() {
         super.tearDown()
+        facebookLogOut()
     }
     
     func testMakeReservation() {
         
 //        let loginScreen = LoginScreen()
 //        loginScreen.tapOnLoginLaterButton()
-        facebookLogin()
         
         let homeScreen = HomeScreen(name: placeName)
         homeScreen.tapOnRestaurantCell()
@@ -36,9 +37,7 @@ class ReservationTest: BaseTest {
         let reservationScreen = ReservationScreen()
         reservationScreen.selectDate(month: month, day: day)
 //       reservationScreen.goToHomeScreen()
-//       back(to: HomeScreen.self)
-        
-        facebookLogOut()  
+        back(to: HomeScreen.self)
         
     }
     
