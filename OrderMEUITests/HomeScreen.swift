@@ -13,7 +13,7 @@ class HomeScreen : BaseScreen, TabBar {
 
     private var restaurantCell : XCUIElement!
     
-    override init() {
+    required init() {
         
     }
     

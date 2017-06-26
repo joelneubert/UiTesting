@@ -13,7 +13,7 @@ class LoginScreen : BaseScreen {
     
     private let loginLaterButton = app.buttons["Log in later"]
     
-    override init() {
+    required init() {
         super.init()
         visible()
     }

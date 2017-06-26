@@ -21,10 +21,11 @@ class ReservationTest: BaseTest {
         super.tearDown()
     }
     
-    func testCalendar() {
+    func testMakeReservation() {
         
-        let loginScreen = LoginScreen()
-        loginScreen.tapOnLoginLaterButton()
+//        let loginScreen = LoginScreen()
+//        loginScreen.tapOnLoginLaterButton()
+        facebookLogin()
         
         let homeScreen = HomeScreen(name: placeName)
         homeScreen.tapOnRestaurantCell()
@@ -34,7 +35,9 @@ class ReservationTest: BaseTest {
         let (day, month) = getDate(daysFromToday: 2)
         let reservationScreen = ReservationScreen()
         reservationScreen.selectDate(month: month, day: day)
-        reservationScreen.goToHomeScreen()
+//       reservationScreen.goToHomeScreen()
+//       back(to: HomeScreen.self)
+        
     }
     
     

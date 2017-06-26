@@ -54,11 +54,7 @@ class OrderMEUITests: BaseTest {
     
         let loginScreen = LoginScreen()
         loginScreen.tapOnLoginLaterButton()
-        
-//        app.tabBars.buttons["Home"].tap()
-    
-//        let backButton = app.buttons["Back 50"]
-        
+                
         let homeScreen = HomeScreen(name: placeName)
         homeScreen.tapOnRestaurantCell()
         

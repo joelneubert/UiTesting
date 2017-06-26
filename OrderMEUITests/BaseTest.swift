@@ -12,6 +12,8 @@ import XCTest
 class BaseTest: XCTestCase {
     
     let app = XCUIApplication()
+    let backButton =  XCUIApplication().buttons["Back 50"]
+
     
     override func setUp() {
         super.setUp()
@@ -28,6 +30,13 @@ class BaseTest: XCTestCase {
         let myExpectation = expectation(for: exists, evaluatedWith:element, handler: nil)
         XCTWaiter().wait(for: [myExpectation], timeout: time)
     }
+    
+    @discardableResult
+    func back<T>(to screen: T.Type) -> T where T: BaseScreen {
+        backButton.tap()
+        return T()
+    }
+
     
 }
 
@@ -53,14 +62,19 @@ extension BaseTest {
         app.buttons["Continue with Facebook"].tap()
         
         let webViewsQuery = app.webViews
-        //let emailOrPhoneTextField = webViewsQuery.textFields["Email or Phone"]
-        //emailOrPhoneTextField.tap()
-        //emailOrPhoneTextField.typeText(user.email)
-        webViewsQuery.secureTextFields["Facebook Password"].typeText(user.password)
+        let emailOrPhoneTextField = webViewsQuery.textFields["Email or Phone"]
+        emailOrPhoneTextField.tap()
+        sleep(1)
+        emailOrPhoneTextField.typeText(user.email)
+        
+        let password = webViewsQuery.secureTextFields["Facebook Password"]
+        password.tap()
+        sleep(1)
+        password.typeText(user.password)
         webViewsQuery.buttons["Log In"].tap()
     
-        app.webViews.buttons["Log In"].tap()
-        app.buttons["OK"].tap()
+        let okBtn = app.buttons["OK"].waitToExist()
+        okBtn.tap()
     }
     
 }

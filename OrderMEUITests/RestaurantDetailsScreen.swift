@@ -15,7 +15,7 @@ class RestaurantDetailsScreen: BaseScreen, TabBar {
     private let reservationCell = table.staticTexts["Reservation"]
     
     
-    override init() {
+    required init() {
         detectTableCell.waitToExist()
     }
     
@@ -37,7 +37,7 @@ class TableDetection : BaseScreen, TabBar {
     private let selectTableField = app.textFields["@table_number_textfield"]
     private let selectTableButton = app.buttons["Select table"]
     
-    override init() {
+    required init() {
         super.init()
         visible()
     }
