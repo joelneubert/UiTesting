@@ -25,8 +25,8 @@ class BaseTest: XCTestCase {
     
     func waitForElementToAppear(format: String, element: AnyObject, time: Double){
         let exists = NSPredicate(format: format)
-        expectation(for: exists, evaluatedWith:element, handler: nil)
-        waitForExpectations(timeout: time, handler: nil)
+        let myExpectation = expectation(for: exists, evaluatedWith:element, handler: nil)
+        XCTWaiter().wait(for: [myExpectation], timeout: time)
     }
     
 }

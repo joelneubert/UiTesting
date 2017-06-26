@@ -30,12 +30,11 @@ class ReservationTest: BaseTest {
         homeScreen.tapOnRestaurantCell()
         let restaurantDetailsScreen = RestaurantDetailsScreen()
         restaurantDetailsScreen.tapOnReservation()
-        
-        
+       
         let (day, month) = getDate(daysFromToday: 2)
         let reservationScreen = ReservationScreen()
         reservationScreen.selectDate(month: month, day: day)
-        
+        reservationScreen.goToHomeScreen()
     }
     
     

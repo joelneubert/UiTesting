@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ReservationScreen: BaseScreen {
+class ReservationScreen: BaseScreen, TabBar {
     
     private let pickerWheelDateMonthDays: XCUIElement = app.datePickers.pickerWheels.element(boundBy: 0)
     private let pickerWheelDateHours: XCUIElement = app.datePickers.pickerWheels.element(boundBy: 1)

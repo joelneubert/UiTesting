@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class HomeScreen : BaseScreen  {
+class HomeScreen : BaseScreen, TabBar {
 
     private var restaurantCell : XCUIElement!
     

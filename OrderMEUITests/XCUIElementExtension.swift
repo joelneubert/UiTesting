@@ -11,7 +11,8 @@ import XCTest
 private let defaultTimeoutInSeconds = 10.0
 
 extension XCUIElement {
-    @discardableResult func waitToExist() -> XCUIElement {
+    @discardableResult
+    func waitToExist() -> XCUIElement {
         
         let doesElementExist: () -> Bool = {
             return self.exists

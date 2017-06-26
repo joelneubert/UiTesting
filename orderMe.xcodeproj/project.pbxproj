@@ -54,6 +54,8 @@
 		2BE8372F1CFF9EE800506130 /* FutureReserveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE8372E1CFF9EE800506130 /* FutureReserveCell.swift */; };
 		2BE837311CFF9EF300506130 /* PastReserveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE837301CFF9EF300506130 /* PastReserveCell.swift */; };
 		2BE837331CFFA10000506130 /* Reserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE837321CFFA10000506130 /* Reserve.swift */; };
+		93D9B0381F00D24700102F70 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9B0371F00D24700102F70 /* TabBar.swift */; };
+		93D9B03A1F00D31F00102F70 /* TabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9B0391F00D31F00102F70 /* TabBarExtension.swift */; };
 		9FDFB94A331208B7D8FE4AA3 /* Pods_OrderMEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E078C118644F1F4B98483F /* Pods_OrderMEUITests.framework */; };
 		E8E4BF6160F8C100D1B12500 /* Pods_orderMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD16F67A289A8CEBEDC646 /* Pods_orderMe.framework */; };
 /* End PBXBuildFile section */
@@ -124,6 +126,8 @@
 		2BE8372E1CFF9EE800506130 /* FutureReserveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureReserveCell.swift; sourceTree = "<group>"; };
 		2BE837301CFF9EF300506130 /* PastReserveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastReserveCell.swift; sourceTree = "<group>"; };
 		2BE837321CFFA10000506130 /* Reserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reserve.swift; sourceTree = "<group>"; };
+		93D9B0371F00D24700102F70 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		93D9B0391F00D31F00102F70 /* TabBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarExtension.swift; sourceTree = "<group>"; };
 		A02526015C2AC40E8E286088 /* Pods-orderMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-orderMe/Pods-orderMe.debug.xcconfig"; sourceTree = "<group>"; };
 		B2E078C118644F1F4B98483F /* Pods_OrderMEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderMEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -296,6 +300,7 @@
 				2BD80F7C1EE117B500C57A89 /* HomeScreen.swift */,
 				2BD80F7E1EE11AEE00C57A89 /* RestaurantDetailsScreen.swift */,
 				2BDAF05F1EF39223008E5693 /* ReservationScreen.swift */,
+				93D9B0371F00D24700102F70 /* TabBar.swift */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD80F7A1EE1141700C57A89 /* XCUIElementExtension.swift */,
+				93D9B0391F00D31F00102F70 /* TabBarExtension.swift */,
 			);
 			name = Extentions;
 			sourceTree = "<group>";
@@ -604,7 +610,9 @@
 				2BD80F7B1EE1141700C57A89 /* XCUIElementExtension.swift in Sources */,
 				2BD80F771EE110F700C57A89 /* LoginScreen.swift in Sources */,
 				2BD80F831EEA502C00C57A89 /* Place.swift in Sources */,
+				93D9B0381F00D24700102F70 /* TabBar.swift in Sources */,
 				2BD80F7F1EE11AEE00C57A89 /* RestaurantDetailsScreen.swift in Sources */,
+				93D9B03A1F00D31F00102F70 /* TabBarExtension.swift in Sources */,
 				2BDAF05C1EEF9693008E5693 /* TestUser.swift in Sources */,
 				2BD80F7D1EE117B500C57A89 /* HomeScreen.swift in Sources */,
 			);
