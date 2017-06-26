@@ -38,6 +38,8 @@ class ReservationTest: BaseTest {
 //       reservationScreen.goToHomeScreen()
 //       back(to: HomeScreen.self)
         
+        facebookLogOut()  
+        
     }
     
     

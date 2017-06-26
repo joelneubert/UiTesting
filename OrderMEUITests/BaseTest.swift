@@ -8,6 +8,8 @@
 
 
 import XCTest
+import FacebookLogin
+import FacebookCore
 
 class BaseTest: XCTestCase {
     
@@ -75,6 +77,10 @@ extension BaseTest {
     
         let okBtn = app.buttons["OK"].waitToExist()
         okBtn.tap()
+    }
+    
+    func facebookLogOut() {
+        LoginManager().logOut()
     }
     
 }

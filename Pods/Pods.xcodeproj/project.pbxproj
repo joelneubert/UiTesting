@@ -95,6 +95,7 @@
 		37D7FFC8B873CCBBC84E0912840FC2FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD6F18E951C07DFF88212706052D7F0 /* Foundation.framework */; };
 		37F951F2BDB75BD682C2999EB7B51A35 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4D10D0F08104D0CE1E556686565726 /* AlamofireImage-dummy.m */; };
 		3855E47774357397BEA71DD9F6450477 /* GraphAPIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE965790066E1EDFB3D6C00C616B0B95 /* GraphAPIVersion.swift */; };
+		38DABFB74C8C556CEF26D6C864901F1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD6F18E951C07DFF88212706052D7F0 /* Foundation.framework */; };
 		394E61475B55A9A80EC0703F19B8BB5C /* FBSDKGraphRequestMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BE579EB74110F57FB47B7DA117EA6 /* FBSDKGraphRequestMetadata.m */; };
 		39769A9EC4166516233154D16DE69604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD6F18E951C07DFF88212706052D7F0 /* Foundation.framework */; };
 		397750B1D11EE03FF07C561C7AB06B26 /* FBSDKImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A559B0D0B921DAC802FB101F42B5A1 /* FBSDKImageDownloader.m */; };
@@ -122,7 +123,6 @@
 		4615AF6E02FFC7637ED754F82CB2A375 /* FBSDKColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 137B701ACF4AB5BD2FEACA21F25D662C /* FBSDKColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		468A777F552BD0567796A5A05F2B6748 /* FBSDKWebDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB7862228DAB95EBA189EDB168001D /* FBSDKWebDialogView.m */; };
 		485BD0189666612BE5B4B21B0A38C8C5 /* FBSDKAppLinkResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D317C139137540A45D465018507498 /* FBSDKAppLinkResolver.m */; };
-		49B9257EF4382F54880AFFF21815173D /* Pods-OrderMEUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70416BFAB4F372FCA7849A710BE2C70B /* Pods-OrderMEUITests-dummy.m */; };
 		49E8017D7AC3FE9155EA8ED300C2CD03 /* FBSDKTimeSpentData.h in Headers */ = {isa = PBXBuildFile; fileRef = FD155A7788269EB16C31B06F1B26265F /* FBSDKTimeSpentData.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4C849B965E16FF3EF988A3A75A08E1E6 /* FBSDKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0307D7488D04A95AEE9C9C91BCCAD172 /* FBSDKIcon.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4ECECEB5C372BB91D3A66BFD432AD598 /* BFCancellationTokenSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 47445A8C0D0B43D02050C875D29CF531 /* BFCancellationTokenSource.m */; };
@@ -203,10 +203,10 @@
 		87A544DBE1F5052744CB3BD578C13FE1 /* FBSDKAudioResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ED965EB1E82694120D56D8091C894 /* FBSDKAudioResourceLoader.m */; };
 		883A837F36EB82109A3B61B385172DB0 /* Alamofire-Synchronous-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 842DEACFB028D55A37B300C80D1CD9B0 /* Alamofire-Synchronous-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8958EBDBD07F22FA8DDBE48563D87B34 /* LoginBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F650025DE9ECDCF939491D5A8F6434 /* LoginBehavior.swift */; };
-		8B0A39738D5C708FFA710641654C515C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD6F18E951C07DFF88212706052D7F0 /* Foundation.framework */; };
 		8B533682B55D5ADC1BBABE5DA70EBDA1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B3FEB6F11D73E4EE6F48BFCAC57190 /* FBSDKCoreKit.framework */; };
 		8D3044AA39B33DD7044881C4EDA0C25A /* FBSDKLoginTooltipView.h in Headers */ = {isa = PBXBuildFile; fileRef = F20CD1A71524BF897A33CB1ACC134C54 /* FBSDKLoginTooltipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F763E60FE1D414778EAD13B93C6496A /* GraphResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7997E41A1660B4FD80F5C211CCBF44BF /* GraphResponseProtocol.swift */; };
+		90BA2E6958AE71EECCB16EECED2A92A7 /* Pods-OrderMEUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD0AAE1EEFAF56DFC699249E6B6E489 /* Pods-OrderMEUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91877C56F738D96FEB9813C61B0435E0 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964869F466207EFA5CCB55B2B102AAF /* Permission.swift */; };
 		91E2A116F2CAC6500A8460B30F7A9458 /* BFTask+Exceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B9220D9C11690481722E97AD99A17E /* BFTask+Exceptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9557DDA64DF8D749EEAD1BACD3CFE501 /* FBSDKKeychainStoreViaBundleID.m in Sources */ = {isa = PBXBuildFile; fileRef = 7436C6662608962EDB9D21DAA68EB800 /* FBSDKKeychainStoreViaBundleID.m */; };
@@ -285,7 +285,6 @@
 		CADACE233EDFF7177706ED22AAA1FF87 /* FacebookCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A2AEA6031A217B6489326D7C1CC43A /* FacebookCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B15FCBA8CB0CCA36FA08935BE6708 /* Response.swift */; };
 		CC7CC264F9B235B1661D2EFEDDB1B1B4 /* FBSDKAppEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C4E1C2691841476B0840B88A2BF77C /* FBSDKAppEvents.m */; };
-		CCCAABAD4822CEF7CFF4F06758DC59F5 /* Pods-OrderMEUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD0AAE1EEFAF56DFC699249E6B6E489 /* Pods-OrderMEUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD51D03E9C674E42D87A11D3FED20083 /* ReadPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3819BDFD5994F00271C59EE29609BB8 /* ReadPermission.swift */; };
 		D004B61FD43E695EA514E9E1C7481461 /* BFAppLinkReturnToRefererController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB342523AC006D0680F5F232E32F6F1 /* BFAppLinkReturnToRefererController.m */; };
 		D1879F2E48F69322FB5F8D6DFEFC2D34 /* FBSDKLoginManagerLoginResult+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE4B65A49B23D9503FA12B33EFA7077 /* FBSDKLoginManagerLoginResult+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -317,6 +316,7 @@
 		E49DB624309E1FC31FDE000C6727F6FE /* FBSDKTooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BECEE786AE5864CD8DDFBA930AADC4 /* FBSDKTooltipView.m */; };
 		E4CD1BBF54F6FF62DDB31D015775814E /* Pods-orderMe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B94FE5331917DD6FC1C15D8F061A023 /* Pods-orderMe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E58EDEEE263AFAB65B3E8ADC97E63F34 /* FBSDKAccessTokenCacheV4.h in Headers */ = {isa = PBXBuildFile; fileRef = FBA01FCEE34ECE1E9E814AACF582A958 /* FBSDKAccessTokenCacheV4.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E5EE0E7998B3C9B7E2F1ED1D4E210451 /* Pods-OrderMEUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70416BFAB4F372FCA7849A710BE2C70B /* Pods-OrderMEUITests-dummy.m */; };
 		E64FCC59B52B17474D89E4BE8A359E61 /* FBSDKGraphRequestConnection+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB260605DF4F5B43D6139E5F7C816B5 /* FBSDKGraphRequestConnection+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E883348B615F8CF5EFF4C7F8369F6A34 /* FBSDKError.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E357555F89C0A37D237EC7ED7F4286 /* FBSDKError.m */; };
 		E905A483416455C0E8BF45E9218E47B5 /* FBSDKURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDFB7E38B532B4B0AE7C8F0DA306540 /* FBSDKURLConnection.m */; };
@@ -367,6 +367,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0013244C77C899149662E2100BBE7ADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFE4C70245EE2857D336B8B9FA4E825;
+			remoteInfo = AlamofireImage;
+		};
 		053DA78A852E0E6E65596A25C7965EC9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -387,6 +394,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = DDBCFDE490CDFDABF6F16A26F346932D;
 			remoteInfo = FacebookCore;
+		};
+		5DD16107341CF0B9B2E2E3D876326121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 593E9479C06FB200807D11AB29EB50BD;
+			remoteInfo = FBSDKCoreKit;
 		};
 		658611266A706589A7E194DB5F40EDB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -409,6 +423,13 @@
 			remoteGlobalIDString = 593E9479C06FB200807D11AB29EB50BD;
 			remoteInfo = FBSDKCoreKit;
 		};
+		7116CC14112582AB3AEE139344F23197 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B5AC3C06B783F8674FDB4C0F900B56A;
+			remoteInfo = FBSDKLoginKit;
+		};
 		750433D59BB97CB562A71BDE1705720C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -422,6 +443,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 44CAD6CE523055ED339E87154473A254;
 			remoteInfo = Bolts;
+		};
+		89E4140BD76C7A008084F4ACB27C60ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDBCFDE490CDFDABF6F16A26F346932D;
+			remoteInfo = FacebookCore;
 		};
 		8C8608F2C87A6D91FCD86F90E5604514 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -451,13 +479,6 @@
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
-		9236CFD9D518B7C4E51DB68941700DE3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD6C9FB6B052E1CF663F8A56041EA163;
-			remoteInfo = ObjectMapper;
-		};
 		A1758AA696D56310AA192B587162169A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -479,12 +500,19 @@
 			remoteGlobalIDString = 593E9479C06FB200807D11AB29EB50BD;
 			remoteInfo = FBSDKCoreKit;
 		};
-		D12AA51026FD59A7583C5003DDF6EB0C /* PBXContainerItemProxy */ = {
+		D1991662D6B885759EB5B31707354957 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EBE460D3E3A3CF1AFBBDFA387940E5E7;
-			remoteInfo = "Alamofire-Synchronous";
+			remoteGlobalIDString = 44CAD6CE523055ED339E87154473A254;
+			remoteInfo = Bolts;
+		};
+		D42762AC3ACB55EE8BCBBFCDB26553EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6C9FB6B052E1CF663F8A56041EA163;
+			remoteInfo = ObjectMapper;
 		};
 		D53E3885669EAC4D646F64CE4367BFFC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -493,19 +521,26 @@
 			remoteGlobalIDString = 44CAD6CE523055ED339E87154473A254;
 			remoteInfo = Bolts;
 		};
-		E27A312678C85C142B59014A2D96B889 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9EFE4C70245EE2857D336B8B9FA4E825;
-			remoteInfo = AlamofireImage;
-		};
-		E7ED8940C1FA36B97F4BC2F050420F76 /* PBXContainerItemProxy */ = {
+		E46DFDA7CDE6C3B1DABCA4469626B55D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
+		};
+		F26270837C47FE9642DB809544190B14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE460D3E3A3CF1AFBBDFA387940E5E7;
+			remoteInfo = "Alamofire-Synchronous";
+		};
+		F647DC08B98D8BBA3F0B3443F106EBC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7335E9C9689F3B8A16F063A884748533;
+			remoteInfo = FacebookLogin;
 		};
 		FA292E856D14F23EA8F2CFEE5343A139 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -949,19 +984,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52654A4997E525B19CF61860F90BD74B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B0A39738D5C708FFA710641654C515C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5CBF451DCA26730C976CC026ED37822C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				553C77C3BA656D7F8083C3B56984F521 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AB069AE94CB19CF0F170D43AB8AFD00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38DABFB74C8C556CEF26D6C864901F1F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1843,11 +1878,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CE2BBF5D25A34E7D6F39258022ECDE9 /* Headers */ = {
+		9D285476065C21DB2FA1C2843CFFD43F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCAABAD4822CEF7CFF4F06758DC59F5 /* Pods-OrderMEUITests-umbrella.h in Headers */,
+				90BA2E6958AE71EECCB16EECED2A92A7 /* Pods-OrderMEUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1918,6 +1953,32 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		138CAE207F4429844CBBC9C90695C38E /* Pods-OrderMEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9FEA9227F94B18E58126055B40BEA75 /* Build configuration list for PBXNativeTarget "Pods-OrderMEUITests" */;
+			buildPhases = (
+				D02A0E56A155FA6ADC03E6B75217DBBB /* Sources */,
+				6AB069AE94CB19CF0F170D43AB8AFD00 /* Frameworks */,
+				9D285476065C21DB2FA1C2843CFFD43F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				241CAA83E7F4541DE8FE971CD1D412BA /* PBXTargetDependency */,
+				3FD412CBBE900C2EE9AC10DCB21D5936 /* PBXTargetDependency */,
+				9FEBBD335BC891CCED33C275F6856835 /* PBXTargetDependency */,
+				7C1B74816E32C827ED7ECE717F8277CD /* PBXTargetDependency */,
+				7E37D75B486053ACB8C2C54AE856A5AB /* PBXTargetDependency */,
+				1FDBC1919B04D344EB313A12594F8753 /* PBXTargetDependency */,
+				13FEBFD5BDEA2F0FFB887EF8525B37D1 /* PBXTargetDependency */,
+				436753B416D74224F86271B10758BA3D /* PBXTargetDependency */,
+				1E75123490879B9B31CD16F1A7123243 /* PBXTargetDependency */,
+			);
+			name = "Pods-OrderMEUITests";
+			productName = "Pods-OrderMEUITests";
+			productReference = CC08F735ADD9D62C9FEE1CA52355EAD5 /* Pods_OrderMEUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		44CAD6CE523055ED339E87154473A254 /* Bolts */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6E008B707197923282762C6BCBCB928 /* Build configuration list for PBXNativeTarget "Bolts" */;
@@ -2054,27 +2115,6 @@
 			productReference = 3B63B3C1C4AEDE58792CB7F02F09B5A4 /* AlamofireImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C6F3642BDD43A0AEA81B64A59E25EF3C /* Pods-OrderMEUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B3E38DF7B45AB4CABD2C94987A247BAB /* Build configuration list for PBXNativeTarget "Pods-OrderMEUITests" */;
-			buildPhases = (
-				8A52AD186689042546E3C16771734148 /* Sources */,
-				52654A4997E525B19CF61860F90BD74B /* Frameworks */,
-				9CE2BBF5D25A34E7D6F39258022ECDE9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1FAF9B75AE298597716625A6BFC78854 /* PBXTargetDependency */,
-				FC8EDA737AF69F00090CA8620A449A83 /* PBXTargetDependency */,
-				04AD1E4835107F96A9B14E5153276387 /* PBXTargetDependency */,
-				80A3FDF25D028D45EB27C60B4ECD4F3F /* PBXTargetDependency */,
-			);
-			name = "Pods-OrderMEUITests";
-			productName = "Pods-OrderMEUITests";
-			productReference = CC08F735ADD9D62C9FEE1CA52355EAD5 /* Pods_OrderMEUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		CD6C9FB6B052E1CF663F8A56041EA163 /* ObjectMapper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23CFD86DE455F2B998EC09D589DA285D /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
@@ -2160,7 +2200,7 @@
 				5B5AC3C06B783F8674FDB4C0F900B56A /* FBSDKLoginKit */,
 				CD6C9FB6B052E1CF663F8A56041EA163 /* ObjectMapper */,
 				572DB9227AE97BA493BCDD626527056D /* Pods-orderMe */,
-				C6F3642BDD43A0AEA81B64A59E25EF3C /* Pods-OrderMEUITests */,
+				138CAE207F4429844CBBC9C90695C38E /* Pods-OrderMEUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -2341,14 +2381,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A52AD186689042546E3C16771734148 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49B9257EF4382F54880AFFF21815173D /* Pods-OrderMEUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BC6BB8BAE9A0CFCAD4B74338DD1029AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2382,6 +2414,14 @@
 				4F5BF09C840AA086D44DFA9B9F5E5AA5 /* UserProfile.FetchResult.swift in Sources */,
 				C14775EEDC5105714449E544803A347C /* UserProfile.PictureView.swift in Sources */,
 				B22346D47210319407DBDA0BBE15D546 /* UserProfile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D02A0E56A155FA6ADC03E6B75217DBBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5EE0E7998B3C9B7E2F1ED1D4E210451 /* Pods-OrderMEUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2452,17 +2492,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		04AD1E4835107F96A9B14E5153276387 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AlamofireImage;
-			target = 9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */;
-			targetProxy = E27A312678C85C142B59014A2D96B889 /* PBXContainerItemProxy */;
-		};
 		06030351E295721DAAC4F91B155FB019 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
 			targetProxy = 90B255C177DA95577ACB2ABEE8F3BB9C /* PBXContainerItemProxy */;
+		};
+		13FEBFD5BDEA2F0FFB887EF8525B37D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FacebookCore;
+			target = DDBCFDE490CDFDABF6F16A26F346932D /* FacebookCore */;
+			targetProxy = 89E4140BD76C7A008084F4ACB27C60ED /* PBXContainerItemProxy */;
 		};
 		1D5E477078E2373969DF1E1DEF30A230 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2470,11 +2510,23 @@
 			target = 593E9479C06FB200807D11AB29EB50BD /* FBSDKCoreKit */;
 			targetProxy = FA292E856D14F23EA8F2CFEE5343A139 /* PBXContainerItemProxy */;
 		};
-		1FAF9B75AE298597716625A6BFC78854 /* PBXTargetDependency */ = {
+		1E75123490879B9B31CD16F1A7123243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = CD6C9FB6B052E1CF663F8A56041EA163 /* ObjectMapper */;
+			targetProxy = D42762AC3ACB55EE8BCBBFCDB26553EC /* PBXContainerItemProxy */;
+		};
+		1FDBC1919B04D344EB313A12594F8753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSDKLoginKit;
+			target = 5B5AC3C06B783F8674FDB4C0F900B56A /* FBSDKLoginKit */;
+			targetProxy = 7116CC14112582AB3AEE139344F23197 /* PBXContainerItemProxy */;
+		};
+		241CAA83E7F4541DE8FE971CD1D412BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = E7ED8940C1FA36B97F4BC2F050420F76 /* PBXContainerItemProxy */;
+			targetProxy = E46DFDA7CDE6C3B1DABCA4469626B55D /* PBXContainerItemProxy */;
 		};
 		29B94C6EE820DC0EA659485414F1DB61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2487,6 +2539,18 @@
 			name = AlamofireImage;
 			target = 9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */;
 			targetProxy = 8D2CDB697A63679AD4DDEF2DAA374EAC /* PBXContainerItemProxy */;
+		};
+		3FD412CBBE900C2EE9AC10DCB21D5936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-Synchronous";
+			target = EBE460D3E3A3CF1AFBBDFA387940E5E7 /* Alamofire-Synchronous */;
+			targetProxy = F26270837C47FE9642DB809544190B14 /* PBXContainerItemProxy */;
+		};
+		436753B416D74224F86271B10758BA3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FacebookLogin;
+			target = 7335E9C9689F3B8A16F063A884748533 /* FacebookLogin */;
+			targetProxy = F647DC08B98D8BBA3F0B3443F106EBC5 /* PBXContainerItemProxy */;
 		};
 		5254E5C4FBCF8D0C43B37000F524A63A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2506,11 +2570,17 @@
 			target = 44CAD6CE523055ED339E87154473A254 /* Bolts */;
 			targetProxy = 658611266A706589A7E194DB5F40EDB7 /* PBXContainerItemProxy */;
 		};
-		80A3FDF25D028D45EB27C60B4ECD4F3F /* PBXTargetDependency */ = {
+		7C1B74816E32C827ED7ECE717F8277CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ObjectMapper;
-			target = CD6C9FB6B052E1CF663F8A56041EA163 /* ObjectMapper */;
-			targetProxy = 9236CFD9D518B7C4E51DB68941700DE3 /* PBXContainerItemProxy */;
+			name = Bolts;
+			target = 44CAD6CE523055ED339E87154473A254 /* Bolts */;
+			targetProxy = D1991662D6B885759EB5B31707354957 /* PBXContainerItemProxy */;
+		};
+		7E37D75B486053ACB8C2C54AE856A5AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSDKCoreKit;
+			target = 593E9479C06FB200807D11AB29EB50BD /* FBSDKCoreKit */;
+			targetProxy = 5DD16107341CF0B9B2E2E3D876326121 /* PBXContainerItemProxy */;
 		};
 		858C73FD543C52D9322067174B059EF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2529,6 +2599,12 @@
 			name = FBSDKCoreKit;
 			target = 593E9479C06FB200807D11AB29EB50BD /* FBSDKCoreKit */;
 			targetProxy = FC13C2B8FB7C353328B3E1FC1E0D2D7F /* PBXContainerItemProxy */;
+		};
+		9FEBBD335BC891CCED33C275F6856835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlamofireImage;
+			target = 9EFE4C70245EE2857D336B8B9FA4E825 /* AlamofireImage */;
+			targetProxy = 0013244C77C899149662E2100BBE7ADC /* PBXContainerItemProxy */;
 		};
 		A90C385D1E2050747C5AB481C9AC98E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2577,12 +2653,6 @@
 			name = Bolts;
 			target = 44CAD6CE523055ED339E87154473A254 /* Bolts */;
 			targetProxy = 8C8608F2C87A6D91FCD86F90E5604514 /* PBXContainerItemProxy */;
-		};
-		FC8EDA737AF69F00090CA8620A449A83 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Alamofire-Synchronous";
-			target = EBE460D3E3A3CF1AFBBDFA387940E5E7 /* Alamofire-Synchronous */;
-			targetProxy = D12AA51026FD59A7583C5003DDF6EB0C /* PBXContainerItemProxy */;
 		};
 		FFB3201ACC3B9B5CCB7B04FDC3E02AD2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2895,6 +2965,41 @@
 			};
 			name = Debug;
 		};
+		709808D22503991EFA126869D0CF2A4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B69201C09D72461B363C3354DDF30E69 /* Pods-OrderMEUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OrderMEUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OrderMEUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		75DB0A9A086A2E07D3689130DD40BAA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9E8B98074FBC9B2DB421BDFFDB1A784A /* Alamofire-Synchronous.xcconfig */;
@@ -3125,42 +3230,6 @@
 			};
 			name = Debug;
 		};
-		A6CD89F8261549966D5D6CFCEFC76F2B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5962EF873738952E7C095D7D3626C171 /* Pods-OrderMEUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OrderMEUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OrderMEUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3200,6 +3269,42 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		B96B6F63FF9EA4186BBB2024694FA9B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5962EF873738952E7C095D7D3626C171 /* Pods-OrderMEUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OrderMEUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OrderMEUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		CADCF38B704FF5469C6FB63445FD9F7B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3267,41 +3372,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		DE86457AAACE2B9EF29AA7ABCB07C852 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B69201C09D72461B363C3354DDF30E69 /* Pods-OrderMEUITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OrderMEUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OrderMEUITests/Pods-OrderMEUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OrderMEUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		EBAE90F9E30802DCCF5D569ED0531ABB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3485,15 +3555,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3E38DF7B45AB4CABD2C94987A247BAB /* Build configuration list for PBXNativeTarget "Pods-OrderMEUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A6CD89F8261549966D5D6CFCEFC76F2B /* Debug */,
-				DE86457AAACE2B9EF29AA7ABCB07C852 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B6E008B707197923282762C6BCBCB928 /* Build configuration list for PBXNativeTarget "Bolts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3508,6 +3569,15 @@
 			buildConfigurations = (
 				EBAE90F9E30802DCCF5D569ED0531ABB /* Debug */,
 				2A05B33125C8652AA7BD163FC8150F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9FEA9227F94B18E58126055B40BEA75 /* Build configuration list for PBXNativeTarget "Pods-OrderMEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96B6F63FF9EA4186BBB2024694FA9B5 /* Debug */,
+				709808D22503991EFA126869D0CF2A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
